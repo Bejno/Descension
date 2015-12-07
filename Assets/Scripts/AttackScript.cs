@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using UnityEngine.UI;
 using System.Collections;
 
 public class AttackScript : MonoBehaviour {
@@ -10,7 +11,8 @@ public class AttackScript : MonoBehaviour {
     public float stamina;
     public float staminaRegenRate = 3f; // Stamina points / second
     public float staminaRegenDelay = 3f; // Time in seconds 
-    
+
+    public Slider staminaSlider;
 
     public GameObject shotLeft;
     public GameObject shotRight;
@@ -21,12 +23,12 @@ public class AttackScript : MonoBehaviour {
 
     // Use this for initialization
     void Start () {
+        staminaSlider.maxValue = staminaSlider.value = 125;
 	
 	}
 	
 	// Update is called once per frame
 	void Update () {
-
         if (Input.GetButtonDown("Space") && stamina >= 25)      {
             AttackDown();
         }
@@ -42,7 +44,7 @@ public class AttackScript : MonoBehaviour {
             staminaRegenTime = Mathf.Max(staminaRegenTime - Time.deltaTime, 0f);
         // Regenerate stamina
         if (stamina < 125 && staminaRegenTime <= 0)
-            stamina = Mathf.Min(stamina + Time.deltaTime * staminaRegenRate, 125f);
+            staminaSlider.value = stamina = Mathf.Min(stamina + Time.deltaTime * staminaRegenRate, 125f);
         
     }
 
@@ -50,6 +52,7 @@ public class AttackScript : MonoBehaviour {
     {
         staminaRegenTime = staminaRegenDelay;
         stamina -= amount;
+        staminaSlider.value -= 25;
     }
 
     private void AttackDown()
