@@ -31,9 +31,11 @@ public class AttackScript : MonoBehaviour {
 	void Update () {
         if (Input.GetButtonDown("Space") && stamina >= 25)      {
             AttackDown();
+            player.health = Mathf.Min(player.maxHealth, --player.health);
         }
         else if (Input.GetButtonDown("AttackLeft") && stamina >= 25)      {
             AttackLeft();
+            player.health = Mathf.Min(player.maxHealth, ++player.health);
         }
         else if (Input.GetButtonDown("AttackRight") && stamina >= 25)      {
             AttackRight();
