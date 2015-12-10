@@ -16,5 +16,10 @@ public class PlayerDamageScript : MonoBehaviour {
         {
             player.health = Mathf.Min(player.maxHealth, --player.health);
         }
+        else if (other.gameObject.tag == "Shot")
+        {
+            player.health = Mathf.Min(player.maxHealth, --player.health);
+            Destroy(other.gameObject);
+        }
     }
 }
