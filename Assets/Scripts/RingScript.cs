@@ -3,13 +3,9 @@ using System.Collections;
 
 public class RingScript : MonoBehaviour {
 
-	// Use this for initialization
-	void Start () {
-	
-	}
-	
-	// Update is called once per frame
+    public float speed = 50;
+
 	void Update () {
-        transform.Rotate(0, 0, Time.deltaTime * 50);
+        transform.Rotate(0, 0, Time.deltaTime * speed);
 	}
 }
