@@ -17,6 +17,7 @@ public class LevelTimer : MonoBehaviour {
 
     public void Wave2()
     {
+        // Start wave 2
         StartCoroutine(Level(wave2));
     }
 

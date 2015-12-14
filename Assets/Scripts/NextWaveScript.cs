@@ -4,17 +4,29 @@ using System.Collections;
 public class NextWaveScript : MonoBehaviour {
 
     public float points = 1;
-    public string wave = "Wave2";
+    public NextWave wave;
 
-    void LosePoints()
+    public void LosePoints()
     {
         points -= 1;
 
         if (points <= 0)  {
 
-            var timer = GetComponent<LevelTimer>();
+            var timer = GetComponentInParent<LevelTimer>();
             if(timer)
-            timer.wave();
+            {
+                if (wave == NextWave.Wave2)
+                    timer.Wave2();
+            } else
+
+                print("didnt find it...");
+
+            Destroy(gameObject); 
         }
+    }
+
+    public enum NextWave
+    {
+        none, Wave2
     }
 }
