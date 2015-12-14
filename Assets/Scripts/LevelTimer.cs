@@ -15,6 +15,11 @@ public class LevelTimer : MonoBehaviour {
         StartCoroutine(Level(wave1));
     }
 
+    public void Wave2()
+    {
+        StartCoroutine(Level(wave2));
+    }
+
     IEnumerator Level(List<Element> list) {
         timePassed = 0;
 

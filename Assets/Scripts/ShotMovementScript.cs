@@ -21,7 +21,6 @@ public class ShotMovementScript : MonoBehaviour {
         Destroy(gameObject, deathTime);
     }
 
-
     void Update()
     {
 
