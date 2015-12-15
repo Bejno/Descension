@@ -4,7 +4,9 @@ using System.Collections;
 public class PlayerDamageScript : MonoBehaviour {
 
     public PlayerScript player;
+    public SpriteRenderer playerSprite;
     public Animator anim;
+    public float flashDelay = 3f;
     public float damageDelay; // <-- Invincibility time in seconds
 
     private float invincTime;
@@ -44,5 +46,22 @@ public class PlayerDamageScript : MonoBehaviour {
     {
         invincTime = damageDelay;
         anim.SetTrigger("Damaged");
+        //playerSprite.color = new Color(1, 0.5f, 1, 1);
+        StartCoroutine(spriteFlash());
+
+    }
+
+    IEnumerator spriteFlash()
+    {
+        while (isInvincible)
+        {
+            playerSprite.color = new Color(0.85f, 0, 0, 0.85f);
+            yield return new WaitForSeconds(0.15f);
+            playerSprite.color = new Color(0.85f, 0.85f, 0.85f, 0.85f);
+            yield return new WaitForSeconds(0.15f);
+
+        }
+        playerSprite.color = new Color(1, 1, 1, 1);
+
     }
 }

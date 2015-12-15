@@ -14,7 +14,7 @@ public class ShotScript : MonoBehaviour {
         if (health)
         {
             health.Damage();
-            Destroy(gameObject);
+           // Destroy(gameObject);
         }
     }
 }
