@@ -7,12 +7,16 @@ public class PlayerScript : MonoBehaviour
     public Vector2 speed = new Vector2(50, 50);
     public float outsideDrag;
     public Rigidbody2D rbody;
-    public float health, maxHealth;
+    public int health, maxHealth;
 
 
     private Vector2 outsideForces;
 
-
+    void Start()
+    {
+        // Update the UI, and clamp the health
+        SetHealth(health);
+    }
 
     // Update is called once per frame
     void Update()
@@ -29,10 +33,21 @@ public class PlayerScript : MonoBehaviour
 
         rbody.velocity = movement + outsideForces;
 
-        HealthGUIScript.instance.UpdateUIElements(health, maxHealth);
     }
 
     public void AddOutsideForce(Vector2 force) {
         outsideForces += force;
+    }
+
+    public void SetHealth(int health)
+    {
+        this.health = Mathf.Clamp(health, 0, maxHealth);
+        HealthGUIScript.instance.UpdateUIElements(health, maxHealth);
+    }
+
+    public void ModifyHealth(int delta)
+    {
+        health = Mathf.Clamp(health + delta, 0, maxHealth);
+        HealthGUIScript.instance.UpdateUIElements(health, maxHealth);
     }
 }

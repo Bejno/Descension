@@ -4,42 +4,45 @@ using System.Collections;
 public class PlayerDamageScript : MonoBehaviour {
 
     public PlayerScript player;
-    public float invinTime = 1f;
-    private bool invincibility = false;
+    public Animator anim;
+    public float damageDelay; // <-- Invincibility time in seconds
 
-    // Use this for initialization
-    void Start () {
-	
+    private float invincTime;
+    private bool isInvincible { get { return invincTime > 0; } }
+    
+    void Update () {
+        invincTime = Mathf.Max(0f,invincTime - Time.deltaTime);
 	}
 
     void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.gameObject.tag == "Damage"/* && invincibility == false*/)
+        if (other.gameObject.tag == "Damage" && !isInvincible)
         {
-            player.health = Mathf.Min(player.maxHealth, --player.health);
-           // invincibility = true;
-
-           // InvincibilityTimer();
+            player.ModifyHealth(-1);
+            TurnInvincible();
         }
-        else if (other.gameObject.tag == "Shot"/* && invincibility == false*/)
+        else if (other.gameObject.tag == "Shot" && !isInvincible)
         {
-            Destroy(other.gameObject);
+            var death = other.GetComponent<DeathAnimationScript>();
+            if(death)
+               death.AtDeath();
 
-            if (invincibility == false)  {
-                player.health = Mathf.Min(player.maxHealth, --player.health);
-               // invincibility = true;
+            player.ModifyHealth(-1);
+            TurnInvincible();
+        }
+        else if (other.gameObject.tag == "Life")
+        {
+            var death = other.GetComponent<DeathAnimationScript>();
+            if (death)
+                death.AtDeath();
 
-                //InvincibilityTimer();
-            }
+            player.ModifyHealth(1);
         }
     }
 
-    /*
-    IEnumerator InvincibilityTimer()
+    void TurnInvincible()
     {
-       
-        yield return new WaitForSeconds(invinTime);
-       GetComponent<SpriteRenderer>().color = Color.red;
-        invincibility = false;
-    }*/
+        invincTime = damageDelay;
+        anim.SetTrigger("Damaged");
+    }
 }

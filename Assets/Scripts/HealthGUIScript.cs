@@ -24,7 +24,7 @@ public class HealthGUIScript : MonoBehaviour {
 	}
 
 	// Create UI elements from scratch
-	private void CreateUIElements(float maxHealth) {
+	private void CreateUIElements(int maxHealth) {
 		// Remove any existing
 		foreach (var img in elements) {
 			Destroy(img.gameObject);
@@ -56,7 +56,7 @@ public class HealthGUIScript : MonoBehaviour {
 	}
 
     // Update existing UI elements
-    public void UpdateUIElements(float health, float maxHealth) {
+    public void UpdateUIElements(int health, int maxHealth) {
 		// Maxhealth changed, so recreate the elements
 		if (elements.Count != maxHealth) {
 			CreateUIElements(maxHealth);
