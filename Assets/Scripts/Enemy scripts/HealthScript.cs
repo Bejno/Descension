@@ -5,6 +5,7 @@ public class HealthScript : MonoBehaviour {
 
     public float health, maxHealth;
     public float points;
+    public SpriteRenderer enemySprite;
     public bool miniBoss = false;
     public bool Boss = false;
     public GameObject deathParticle;
@@ -14,6 +15,7 @@ public class HealthScript : MonoBehaviour {
     public void Damage () {
 
         health -= 1;
+        StartCoroutine(spriteFlash());
 
         if (health <= 0)
             Death();
@@ -44,7 +46,24 @@ public class HealthScript : MonoBehaviour {
 
             Instantiate(deathParticle, transform.position + deathParticle.transform.localPosition, deathParticle.transform.localRotation);
 
+        StartCoroutine(DeathDelay());
+    }
+
+    IEnumerator spriteFlash()
+    {
+        enemySprite.color = new Color(0.85f, 0, 0, 0.85f);
+        yield return new WaitForSeconds(0.15f);
+        enemySprite.color = new Color(1, 1, 1, 1);
+
+    }
+
+    IEnumerator DeathDelay()
+    {
+
+        yield return new WaitForSeconds(0.05f);
         Destroy(gameObject);
+
+
     }
 
     public enum NextWave
