@@ -8,7 +8,7 @@ public class PlayerScript : MonoBehaviour
     public float outsideDrag;
     public Rigidbody2D rbody;
     public int health, maxHealth;
-
+    public GameObject deathPartical;
 
     private Vector2 outsideForces;
 
@@ -43,11 +43,23 @@ public class PlayerScript : MonoBehaviour
     {
         this.health = Mathf.Clamp(health, 0, maxHealth);
         HealthGUIScript.instance.UpdateUIElements(health, maxHealth);
+
+        if(health <= 0)
+        {
+            LevelTimer.playerDead = true;
+            AimScript.playerDead = true;
+
+            var activate = GetComponent<ActivatorScript>();
+            activate.Activate();
+
+            Instantiate(deathPartical, transform.position + deathPartical.transform.localPosition, deathPartical.transform.localRotation);
+            Destroy(gameObject);
+        }
     }
 
     public void ModifyHealth(int delta)
     {
-        health = Mathf.Clamp(health + delta, 0, maxHealth);
-        HealthGUIScript.instance.UpdateUIElements(health, maxHealth);
+        SetHealth(health + delta);
     }
+    
 }

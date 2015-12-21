@@ -6,6 +6,8 @@ public class AimScript : MonoBehaviour {
     public GameObject bullet;
     public float speed = 5;
 
+    public static bool playerDead = false;
+
     private Transform Player;
 
     void Start()
@@ -15,17 +17,21 @@ public class AimScript : MonoBehaviour {
 
     void Update()
     {
-        Vector3 delta = Player.position - transform.position;
-        float angle = Mathf.Atan2(delta.y, delta.x) * Mathf.Rad2Deg;
+        if (!playerDead)
+        {
+            Vector3 delta = Player.position - transform.position;
+            float angle = Mathf.Atan2(delta.y, delta.x) * Mathf.Rad2Deg;
 
-        var current = transform.eulerAngles;
+            var current = transform.eulerAngles;
 
-        current.z = Mathf.MoveTowardsAngle(current.z, angle, Time.deltaTime * 200f);
+            current.z = Mathf.MoveTowardsAngle(current.z, angle, Time.deltaTime * 200f);
 
-        transform.eulerAngles = current;
+            transform.eulerAngles = current;
 
-       // Attack();
+            // Attack(); }
 
+
+        }
     }
 
     public void Attack()

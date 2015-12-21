@@ -5,14 +5,26 @@ using System.Collections.Generic;
 public class LevelTimer : MonoBehaviour {
 
     public float updateRate = 1f;
+    public float timeSlowDeley = 1f;
     public List<Element> wave1 = new List<Element>();
     public List<Element> wave2 = new List<Element>();
 
+    public static bool playerDead = false;
     private float timePassed;
 
     void Start() {
         // Start wave 1
         StartCoroutine(Level(wave1));
+    }
+
+    void Update()
+    {
+        if (playerDead)
+        {
+            // Slow down
+            Time.timeScale = Mathf.MoveTowards(Time.timeScale, 0f, Time.unscaledDeltaTime / timeSlowDeley);
+            Time.fixedDeltaTime = Time.timeScale * 0.02f;
+        }
     }
 
     public void Wave2()
@@ -24,7 +36,7 @@ public class LevelTimer : MonoBehaviour {
     IEnumerator Level(List<Element> list) {
         timePassed = 0;
 
-        while (list.Count > 0)
+        while (list.Count > 0 && !playerDead)
         {
             // Check for spawns
             list.RemoveAll(delegate (Element obj)
