@@ -61,5 +61,5 @@ public class PlayerScript : MonoBehaviour
     {
         SetHealth(health + delta);
     }
-    
-}
+
+    }

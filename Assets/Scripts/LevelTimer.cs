@@ -24,6 +24,13 @@ public class LevelTimer : MonoBehaviour {
             // Slow down
             Time.timeScale = Mathf.MoveTowards(Time.timeScale, 0f, Time.unscaledDeltaTime / timeSlowDeley);
             Time.fixedDeltaTime = Time.timeScale * 0.02f;
+           /* var activate = GetComponent<ActivatorScript>();
+            activate.Activate();*/
+        }
+        else
+        {
+            Time.timeScale = 1;
+            Time.fixedDeltaTime = Time.timeScale * 0.02f;
         }
     }
 
