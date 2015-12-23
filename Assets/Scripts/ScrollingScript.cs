@@ -5,6 +5,8 @@ public class ScrollingScript : MonoBehaviour {
 
     public Vector2 speed = new Vector2(2, 2);
     public Vector2 direction = new Vector2(-1, 0);
+    public int BorderY = 20;
+    public int BorderX = -20;
     public int Return = -40;
 
     // Update is called once per frame
@@ -15,7 +17,10 @@ public class ScrollingScript : MonoBehaviour {
         movement *= Time.deltaTime;
         transform.Translate(movement);
 
-        if (transform.position.y >= 20)
+        if (transform.position.y >= BorderY)
             transform.Translate(0, Return, 0);
+
+        if (transform.position.x <= BorderX)
+            transform.Translate(Return, 0, 0);
     }
 }
