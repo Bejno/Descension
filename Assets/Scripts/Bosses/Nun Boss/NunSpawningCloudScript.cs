@@ -4,6 +4,7 @@ using System.Collections;
 public class NunSpawningCloudScript : MonoBehaviour {
 
     public float nuns = 10;
+    public float delay = 0.5f;
     public GameObject nun;
 
 	// Use this for initialization
@@ -21,7 +22,7 @@ public class NunSpawningCloudScript : MonoBehaviour {
         while (nuns > 0)
         {
 
-            yield return new WaitForSeconds(0.05f);
+            yield return new WaitForSeconds(delay);
 
             var pos = transform.position + nun.transform.localPosition;
             pos.x += Random.Range(-7, 8);

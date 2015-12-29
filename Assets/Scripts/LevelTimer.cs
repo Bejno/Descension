@@ -9,6 +9,7 @@ public class LevelTimer : MonoBehaviour {
     public List<Element> wave1 = new List<Element>();
     public List<Element> wave2 = new List<Element>();
 
+    public static bool PauseMenu = false;
     public static bool playerDead = false;
     private float timePassed;
 
@@ -26,6 +27,11 @@ public class LevelTimer : MonoBehaviour {
             Time.fixedDeltaTime = Time.timeScale * 0.02f;
            /* var activate = GetComponent<ActivatorScript>();
             activate.Activate();*/
+        }
+        else if (PauseMenu && !playerDead)
+        {
+            Time.timeScale = 0;
+            Time.fixedDeltaTime = Time.timeScale * 0.02f;
         }
         else
         {

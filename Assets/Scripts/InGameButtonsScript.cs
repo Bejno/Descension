@@ -3,34 +3,21 @@ using System.Collections;
 
 public class InGameButtonsScript : MonoBehaviour {
 
-    public bool inGameMenu = false;
     public float timeSlowDeley = 1f;
 
     // Update is called once per frame
     void Update () {
 
-        if (Input.GetKeyDown("escape"))
+        if (Input.GetKeyDown("escape") && GameObject.Find("Player"))
         {
-            if (inGameMenu)
+            if (LevelTimer.PauseMenu)
             {
-                inGameMenu = false;
+                LevelTimer.PauseMenu = false;
             }
-            else if (!inGameMenu)
+            else if (!LevelTimer.PauseMenu)
             {
-                inGameMenu = true;
+                LevelTimer.PauseMenu = true;
             }
         }
-
-        if (inGameMenu)
-        {
-            Time.timeScale = 0;
-            Time.fixedDeltaTime = Time.timeScale * 0.02f;
-        }
-        else
-        {
-            Time.timeScale = 1;
-            Time.fixedDeltaTime = Time.timeScale * 0.02f;
-        }
-
     }
 }

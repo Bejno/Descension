@@ -6,6 +6,7 @@ public class AimScript : MonoBehaviour {
     public GameObject bullet;
     public float speed = 5;
     public float turnSpeed = 200f;
+    public bool shotSelf = false;
 
     public static bool playerDead = false;
 
@@ -38,8 +39,15 @@ public class AimScript : MonoBehaviour {
     public void Attack()
     {
 
-        var clone = Instantiate(bullet, transform.position, transform.localRotation) as GameObject;
-        clone.GetComponent<Rigidbody2D>().AddForce(new Vector2(transform.right.x, transform.right.y) * speed, ForceMode2D.Impulse);
-        //Destroy(clone, 10);
+        if (!shotSelf)
+        {
+            var clone = Instantiate(bullet, transform.position, transform.localRotation) as GameObject;
+            clone.GetComponent<Rigidbody2D>().AddForce(new Vector2(transform.right.x, transform.right.y) * speed, ForceMode2D.Impulse);
+            //Destroy(clone, 10);
+        }
+        else if (shotSelf)
+        {
+            GetComponent<Rigidbody2D>().AddForce(new Vector2(transform.right.x, transform.right.y) * speed, ForceMode2D.Impulse);
+        }
     }
 }

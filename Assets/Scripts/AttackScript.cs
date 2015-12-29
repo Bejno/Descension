@@ -29,23 +29,23 @@ public class AttackScript : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-        if (Input.GetButtonDown("Space") && stamina >= 25 && !GameObject.Find("ScriptController").GetComponent<InGameButtonsScript>().inGameMenu)      {
+        if (Input.GetButtonDown("Space") && stamina >= 25 && !LevelTimer.PauseMenu)      {
             AttackDown();
             //player.health = Mathf.Min(player.maxHealth, --player.health);
         }
-        else if (Input.GetButtonDown("AttackLeft") && stamina >= 25 && !GameObject.Find("ScriptController").GetComponent<InGameButtonsScript>().inGameMenu)      {
+        else if (Input.GetButtonDown("AttackLeft") && stamina >= 25 && !LevelTimer.PauseMenu)      {
             AttackLeft();
             //player.health = Mathf.Min(player.maxHealth, ++player.health);
         }
-        else if (Input.GetButtonDown("AttackRight") && stamina >= 25 && !GameObject.Find("ScriptController").GetComponent<InGameButtonsScript>().inGameMenu)      {
+        else if (Input.GetButtonDown("AttackRight") && stamina >= 25 && !LevelTimer.PauseMenu)      {
             AttackRight();
         }
 
         // Wait the delay
-        if (staminaRegenTime > 0 && !GameObject.Find("ScriptController").GetComponent <InGameButtonsScript> ().inGameMenu)
+        if (staminaRegenTime > 0 && !LevelTimer.PauseMenu)
             staminaRegenTime = Mathf.Max(staminaRegenTime - Time.deltaTime, 0f);
         // Regenerate stamina
-        if (stamina < 125 && staminaRegenTime <= 0 && !GameObject.Find("ScriptController").GetComponent<InGameButtonsScript>().inGameMenu)
+        if (stamina < 125 && staminaRegenTime <= 0 && !LevelTimer.PauseMenu)
             staminaSlider.value = stamina = Mathf.Min(stamina + Time.deltaTime * staminaRegenRate, 125f);
         
     }
