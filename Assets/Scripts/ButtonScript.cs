@@ -4,6 +4,8 @@ using System.Collections;
 
 public class ButtonScript : MonoBehaviour {
 
+    public Animator anim;
+
     public void Restart()
     {
         SceneManager.LoadScene("Game");
@@ -20,7 +22,9 @@ public class ButtonScript : MonoBehaviour {
 
     public void Play()
     {
-        SceneManager.LoadScene("Game");
+        var trigger = GetComponent<ActivatorScript>();
+        trigger.Activate();
+        anim.SetTrigger("Jump");
     }
 
     public void Exit()

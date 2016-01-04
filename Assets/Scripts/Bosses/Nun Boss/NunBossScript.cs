@@ -9,7 +9,7 @@ public class NunBossScript : MonoBehaviour {
 
     void Start()
     {
-
+        Krucifix();
     }
 
     void Krucifix()

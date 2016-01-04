@@ -52,7 +52,7 @@ public class TypewriterScript : MonoBehaviour {
 		// Check if done
 		if (uiTarget.text.Length == text.Length)
 			active = false;
-	}
+    }
 
 	void AddRemainingTime() {
 		timeLeft += Mathf.Max(0f, 1f / lettersPerSecond + Random.Range(-turbulence, turbulence));

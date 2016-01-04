@@ -40,6 +40,11 @@ public class PlayerDamageScript : MonoBehaviour {
 
             player.ModifyHealth(1);
         }
+        else if (other.gameObject.tag == "Boss" && !isInvincible)
+        {
+            player.ModifyHealth(-1);
+            TurnInvincible();
+        }
     }
 
     void TurnInvincible()
