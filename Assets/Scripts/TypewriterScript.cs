@@ -4,9 +4,11 @@ using System.Collections;
 
 public class TypewriterScript : MonoBehaviour {
 
-	public Text uiTarget;
+    public Animator anim;
+    public Text uiTarget;
 
-	public string text;
+    [TextArea]
+	public string[] text;
 	public float lettersPerSecond = 1f;
 	public float secondsPerLetter = 1f;
 
@@ -17,6 +19,7 @@ public class TypewriterScript : MonoBehaviour {
 
 	private bool active = false;
 	private float timeLeft; // Time 'til next letter
+    private string currentText;
 
 #if UNITY_EDITOR
 	private float oLPS = 1f;
@@ -46,12 +49,15 @@ public class TypewriterScript : MonoBehaviour {
 		if (timeLeft <= 0f) {
 			// Next letter!
 			AddRemainingTime();
-			uiTarget.text += text.Substring(uiTarget.text.Length, 1);
+			uiTarget.text += currentText.Substring(uiTarget.text.Length, 1);
 		}
 
-		// Check if done
-		if (uiTarget.text.Length == text.Length)
-			active = false;
+        // Check if done
+        if (uiTarget.text.Length == currentText.Length)
+        {
+            active = false;
+            anim.SetTrigger("Laugh");
+        }
     }
 
 	void AddRemainingTime() {
@@ -64,6 +70,10 @@ public class TypewriterScript : MonoBehaviour {
 		// Reset
 		uiTarget.text = "";
 		timeLeft = 0f;
+
+        // Randomize text
+        if (text.Length > 0)
+            currentText = text[Random.Range(0, text.Length)];
 
 		// Activate
 		active = true;
