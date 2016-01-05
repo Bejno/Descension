@@ -107,7 +107,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e07db32f00558ce43b9d20a0bc8710fd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: {x: 0, y: 19}
+  speed: {x: 0, y: 25}
   direction: {x: 0, y: -1}
   deathTime: 0.2
   sprite: {fileID: 21299250}
@@ -171,7 +171,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: speed.y
-      value: 19
+      value: 25
       objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: m_TagString

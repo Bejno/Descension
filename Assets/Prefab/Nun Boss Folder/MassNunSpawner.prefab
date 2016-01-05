@@ -27,6 +27,7 @@ GameObject:
   - 4: {fileID: 473016}
   - 114: {fileID: 11422018}
   - 114: {fileID: 11408152}
+  - 114: {fileID: 11450558}
   m_Layer: 0
   m_Name: MassNunSpawner
   m_TagString: Untagged
@@ -101,7 +102,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   nuns: 40
-  delay: 0.2
+  delay: 0.3
   nun: {fileID: 167060, guid: 268afdbae0137084783f8dc64bd1d35d, type: 2}
 --- !u!114 &11422018
 MonoBehaviour:
@@ -115,6 +116,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   deathTime: 1
+--- !u!114 &11450558
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 146338}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d7559962a041fa447999ea27bd983f68, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  deathTime: 9
 --- !u!198 &19828146
 ParticleSystem:
   m_ObjectHideFlags: 1
@@ -3192,7 +3205,11 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: delay
-      value: 0.2
+      value: 0.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: deathTime
+      value: 9
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}

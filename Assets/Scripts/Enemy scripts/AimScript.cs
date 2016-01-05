@@ -7,6 +7,7 @@ public class AimScript : MonoBehaviour {
     public float speed = 5;
     public float turnSpeed = 200f;
     public bool shotSelf = false;
+    public float aimOffset;
 
     public static bool playerDead = false;
 
@@ -26,7 +27,7 @@ public class AimScript : MonoBehaviour {
 
             var current = transform.eulerAngles;
 
-            current.z = Mathf.MoveTowardsAngle(current.z, angle, Time.deltaTime * turnSpeed);
+            current.z = Mathf.MoveTowardsAngle(current.z, angle + aimOffset, Time.deltaTime * turnSpeed);
 
             transform.eulerAngles = current;
 
