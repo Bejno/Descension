@@ -34,7 +34,7 @@ TextureImporter:
   bumpmap:
     convertToNormalMap: 0
     externalNormalMap: 0
-    heightScale: .25
+    heightScale: 0.25
     normalMapFilter: 0
   isReadable: 0
   grayScaleToAlpha: 0
@@ -43,7 +43,7 @@ TextureImporter:
   cubemapConvolutionSteps: 8
   cubemapConvolutionExponent: 1.5
   seamlessCubemap: 0
-  textureFormat: -1
+  textureFormat: -3
   maxTextureSize: 2048
   textureSettings:
     filterMode: 0
@@ -59,7 +59,7 @@ TextureImporter:
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
-  spritePivot: {x: .5, y: .5}
+  spritePivot: {x: 0.5, y: 0.5}
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spritePixelsToUnits: 100
   alphaIsTransparency: 1
@@ -77,6 +77,13 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -41, y: 58}
+        - {x: -42, y: 56}
+        - {x: -42, y: -56}
+        - {x: -40, y: -58}
+        - {x: 42, y: -58}
+        - {x: 42, y: 58}
     - name: Bible_1
       rect:
         serializedVersion: 2
@@ -87,6 +94,13 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -41, y: 58}
+        - {x: -42, y: 56}
+        - {x: -42, y: -56}
+        - {x: -40, y: -58}
+        - {x: 42, y: -58}
+        - {x: 42, y: 58}
     - name: Bible_2
       rect:
         serializedVersion: 2
@@ -97,6 +111,13 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -41, y: 58}
+        - {x: -42, y: 56}
+        - {x: -42, y: -56}
+        - {x: -40, y: -58}
+        - {x: 42, y: -58}
+        - {x: 42, y: 58}
     - name: Bible_3
       rect:
         serializedVersion: 2
@@ -107,6 +128,13 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -41, y: 58}
+        - {x: -42, y: 56}
+        - {x: -42, y: -56}
+        - {x: -40, y: -58}
+        - {x: 42, y: -58}
+        - {x: 42, y: 58}
     - name: Bible_4
       rect:
         serializedVersion: 2
@@ -117,6 +145,14 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 0, y: 74}
+        - {x: -25, y: 68}
+        - {x: -42, y: 57}
+        - {x: -42, y: -56}
+        - {x: -40, y: -58}
+        - {x: 42, y: -58}
+        - {x: 42, y: 74}
     - name: Bible_5
       rect:
         serializedVersion: 2
@@ -127,6 +163,13 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -14, y: 98}
+        - {x: -42, y: 62}
+        - {x: -42, y: -58}
+        - {x: 42, y: -58}
+        - {x: 42, y: 86}
+        - {x: 19, y: 98}
     - name: Bible_6
       rect:
         serializedVersion: 2
@@ -137,6 +180,14 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -74, y: 90}
+        - {x: -74, y: -11}
+        - {x: -56, y: -39}
+        - {x: -34, y: -58}
+        - {x: 50, y: -58}
+        - {x: 50, y: 51}
+        - {x: -46, y: 90}
     - name: Bible_7
       rect:
         serializedVersion: 2
@@ -147,6 +198,13 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -82, y: 58}
+        - {x: -82, y: -56}
+        - {x: -80, y: -58}
+        - {x: 88, y: -58}
+        - {x: 90, y: -56}
+        - {x: 90, y: 58}
     - name: Bible_8
       rect:
         serializedVersion: 2
@@ -157,6 +215,13 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -82, y: 58}
+        - {x: -82, y: -56}
+        - {x: -80, y: -58}
+        - {x: 88, y: -58}
+        - {x: 90, y: -56}
+        - {x: 90, y: 58}
     - name: Bible_9
       rect:
         serializedVersion: 2
@@ -167,6 +232,13 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -82, y: 58}
+        - {x: -82, y: -56}
+        - {x: -80, y: -58}
+        - {x: 88, y: -58}
+        - {x: 90, y: -56}
+        - {x: 90, y: 58}
     - name: Bible_10
       rect:
         serializedVersion: 2
@@ -177,6 +249,13 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -82, y: 58}
+        - {x: -82, y: -56}
+        - {x: -80, y: -58}
+        - {x: 88, y: -58}
+        - {x: 90, y: -56}
+        - {x: 90, y: 58}
     - name: Bible_11
       rect:
         serializedVersion: 2
@@ -187,6 +266,13 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -82, y: 50}
+        - {x: -82, y: -64}
+        - {x: -80, y: -66}
+        - {x: 88, y: -66}
+        - {x: 90, y: -64}
+        - {x: 90, y: 50}
     - name: Bible_12
       rect:
         serializedVersion: 2
@@ -197,6 +283,14 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -74, y: 90}
+        - {x: -74, y: -11}
+        - {x: -56, y: -39}
+        - {x: -34, y: -58}
+        - {x: 50, y: -58}
+        - {x: 50, y: 51}
+        - {x: -46, y: 90}
     - name: Bible_13
       rect:
         serializedVersion: 2
@@ -207,6 +301,13 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -14, y: 98}
+        - {x: -42, y: 62}
+        - {x: -42, y: -58}
+        - {x: 42, y: -58}
+        - {x: 42, y: 86}
+        - {x: 19, y: 98}
     - name: Bible_14
       rect:
         serializedVersion: 2
@@ -217,6 +318,14 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 0, y: 74}
+        - {x: -25, y: 68}
+        - {x: -42, y: 57}
+        - {x: -42, y: -56}
+        - {x: -40, y: -58}
+        - {x: 42, y: -58}
+        - {x: 42, y: 74}
     - name: Bible_15
       rect:
         serializedVersion: 2
@@ -227,6 +336,13 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -41, y: 58}
+        - {x: -42, y: 56}
+        - {x: -42, y: -56}
+        - {x: -40, y: -58}
+        - {x: 42, y: -58}
+        - {x: 42, y: 58}
     - name: Bible_16
       rect:
         serializedVersion: 2
@@ -237,6 +353,14 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -41, y: 58}
+        - {x: -42, y: 56}
+        - {x: -42, y: -56}
+        - {x: -40, y: -58}
+        - {x: 42, y: -58}
+        - {x: 42, y: 58}
+    outline: []
   spritePackingTag: 
   userData: 
   assetBundleName: 

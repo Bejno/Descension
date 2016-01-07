@@ -20,7 +20,7 @@ TextureImporter:
   bumpmap:
     convertToNormalMap: 0
     externalNormalMap: 0
-    heightScale: .25
+    heightScale: 0.25
     normalMapFilter: 0
   isReadable: 0
   grayScaleToAlpha: 0
@@ -29,7 +29,7 @@ TextureImporter:
   cubemapConvolutionSteps: 8
   cubemapConvolutionExponent: 1.5
   seamlessCubemap: 0
-  textureFormat: -1
+  textureFormat: -3
   maxTextureSize: 256
   textureSettings:
     filterMode: 0
@@ -45,7 +45,7 @@ TextureImporter:
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
-  spritePivot: {x: .5, y: .5}
+  spritePivot: {x: 0.5, y: 0.5}
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spritePixelsToUnits: 100
   alphaIsTransparency: 1
@@ -63,6 +63,23 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -9, y: 34}
+        - {x: -18, y: 26}
+        - {x: -18, y: -56}
+        - {x: -17, y: -58}
+        - {x: 19, y: -58}
+        - {x: 26, y: -51}
+        - {x: 26, y: 9}
+        - {x: 16, y: 34}
+      - - {x: 0, y: 58}
+        - {x: -2, y: 56}
+        - {x: -2, y: 40}
+        - {x: 0, y: 38}
+        - {x: 8, y: 38}
+        - {x: 10, y: 40}
+        - {x: 10, y: 56}
+        - {x: 8, y: 58}
     - name: Fire_1
       rect:
         serializedVersion: 2
@@ -73,6 +90,22 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 10, y: 26}
+        - {x: -20, y: 26}
+        - {x: -26, y: 12}
+        - {x: -26, y: -54}
+        - {x: -12, y: -58}
+        - {x: 26, y: -58}
+        - {x: 30, y: -51}
+        - {x: 34, y: -32}
+        - {x: 34, y: -9}
+      - - {x: -2, y: 58}
+        - {x: -2, y: 46}
+        - {x: 8, y: 46}
+        - {x: 10, y: 48}
+        - {x: 10, y: 56}
+        - {x: 8, y: 58}
     - name: Fire_2
       rect:
         serializedVersion: 2
@@ -83,6 +116,16 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: -17, y: 34}
+        - {x: -26, y: 17}
+        - {x: -26, y: -49}
+        - {x: -22, y: -58}
+        - {x: 20, y: -58}
+        - {x: 34, y: -51}
+        - {x: 34, y: 13}
+        - {x: 12, y: 34}
+    outline: []
   spritePackingTag: 
   userData: 
   assetBundleName: 

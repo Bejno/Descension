@@ -21,7 +21,7 @@ TextureImporter:
   bumpmap:
     convertToNormalMap: 0
     externalNormalMap: 0
-    heightScale: .25
+    heightScale: 0.25
     normalMapFilter: 0
   isReadable: 0
   grayScaleToAlpha: 0
@@ -30,7 +30,7 @@ TextureImporter:
   cubemapConvolutionSteps: 8
   cubemapConvolutionExponent: 1.5
   seamlessCubemap: 0
-  textureFormat: -1
+  textureFormat: -3
   maxTextureSize: 2048
   textureSettings:
     filterMode: 0
@@ -46,7 +46,7 @@ TextureImporter:
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
-  spritePivot: {x: .5, y: .5}
+  spritePivot: {x: 0.5, y: 0.5}
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spritePixelsToUnits: 100
   alphaIsTransparency: 1
@@ -64,6 +64,33 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 128, y: -94}
+        - {x: 79, y: -93}
+        - {x: 66, y: -48}
+        - {x: 128, y: 25}
+        - {x: 128, y: 165}
+        - {x: 121, y: 196}
+        - {x: 95, y: 180}
+        - {x: 78, y: 164}
+        - {x: 71, y: 75}
+        - {x: 77, y: 74}
+        - {x: 68, y: 177}
+        - {x: 53, y: 205}
+        - {x: 45, y: 210}
+        - {x: -35, y: 210}
+        - {x: -69, y: 178}
+        - {x: -66, y: 75}
+        - {x: -76, y: 161}
+        - {x: -112, y: 210}
+        - {x: -128, y: 210}
+        - {x: -128, y: -160}
+        - {x: -82, y: -192}
+        - {x: -80, y: -194}
+        - {x: -69, y: -210}
+        - {x: 70, y: -210}
+        - {x: 119, y: -164}
+        - {x: 128, y: -132}
     - name: PlayerSheet_1
       rect:
         serializedVersion: 2
@@ -74,6 +101,38 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 128, y: -94}
+        - {x: 79, y: -93}
+        - {x: 128, y: 28}
+        - {x: 128, y: 152}
+        - {x: 123, y: 186}
+        - {x: 94, y: 182}
+        - {x: 78, y: 164}
+        - {x: 78, y: 66}
+        - {x: 63, y: 68}
+        - {x: 69, y: 75}
+        - {x: 66, y: 197}
+        - {x: 48, y: 194}
+        - {x: 46, y: 192}
+        - {x: 16, y: 210}
+        - {x: 0, y: 210}
+        - {x: -2, y: 208}
+        - {x: -19, y: 210}
+        - {x: -51, y: 210}
+        - {x: -69, y: 177}
+        - {x: -66, y: 80}
+        - {x: -48, y: 62}
+        - {x: -64, y: 66}
+        - {x: -78, y: 66}
+        - {x: -76, y: 170}
+        - {x: -124, y: 197}
+        - {x: -128, y: 168}
+        - {x: -128, y: -153}
+        - {x: -69, y: -210}
+        - {x: 70, y: -210}
+        - {x: 119, y: -164}
+        - {x: 128, y: -132}
     - name: PlayerSheet_2
       rect:
         serializedVersion: 2
@@ -84,6 +143,34 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 128, y: -94}
+        - {x: 67, y: -77}
+        - {x: 101, y: -25}
+        - {x: 128, y: 32}
+        - {x: 128, y: 151}
+        - {x: 123, y: 186}
+        - {x: 94, y: 182}
+        - {x: 78, y: 164}
+        - {x: 71, y: 75}
+        - {x: 77, y: 74}
+        - {x: 68, y: 193}
+        - {x: 35, y: 210}
+        - {x: -33, y: 210}
+        - {x: -36, y: 209}
+        - {x: -67, y: 180}
+        - {x: -126, y: 202}
+        - {x: -128, y: 186}
+        - {x: -128, y: -4}
+        - {x: -113, y: -49}
+        - {x: -128, y: -89}
+        - {x: -128, y: -164}
+        - {x: -96, y: -178}
+        - {x: -80, y: -194}
+        - {x: -69, y: -210}
+        - {x: 70, y: -210}
+        - {x: 119, y: -164}
+        - {x: 128, y: -132}
     - name: PlayerSheet_3
       rect:
         serializedVersion: 2
@@ -94,6 +181,32 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 128, y: -94}
+        - {x: 79, y: -93}
+        - {x: 66, y: -32}
+        - {x: 128, y: 43}
+        - {x: 128, y: 152}
+        - {x: 123, y: 186}
+        - {x: 94, y: 182}
+        - {x: 78, y: 164}
+        - {x: 71, y: 75}
+        - {x: 77, y: 74}
+        - {x: 68, y: 177}
+        - {x: 63, y: 210}
+        - {x: -69, y: 210}
+        - {x: -70, y: 78}
+        - {x: -76, y: 161}
+        - {x: -112, y: 210}
+        - {x: -128, y: 210}
+        - {x: -128, y: -143}
+        - {x: -114, y: -160}
+        - {x: -80, y: -194}
+        - {x: -69, y: -210}
+        - {x: 70, y: -210}
+        - {x: 119, y: -164}
+        - {x: 128, y: -132}
+    outline: []
   spritePackingTag: 
   userData: 
   assetBundleName: 

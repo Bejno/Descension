@@ -4,6 +4,7 @@ using System.Collections;
 public class InGameButtonsScript : MonoBehaviour {
 
     public float timeSlowDeley = 1f;
+    public GameObject buttons;
 
     // Update is called once per frame
     void Update () {
@@ -13,10 +14,13 @@ public class InGameButtonsScript : MonoBehaviour {
             if (LevelTimer.PauseMenu)
             {
                 LevelTimer.PauseMenu = false;
+                buttons.SetActive(false);
             }
             else if (!LevelTimer.PauseMenu)
             {
                 LevelTimer.PauseMenu = true;
+                buttons.SetActive(true);
+
             }
         }
     }

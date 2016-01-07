@@ -11,6 +11,7 @@ public class ButtonScript : MonoBehaviour {
         SceneManager.LoadScene("Game");
         LevelTimer.playerDead = false;
         AimScript.playerDead = false;
+        LevelTimer.PauseMenu = false;
     }
 
     public void Menu()

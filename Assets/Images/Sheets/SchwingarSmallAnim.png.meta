@@ -23,7 +23,7 @@ TextureImporter:
   bumpmap:
     convertToNormalMap: 0
     externalNormalMap: 0
-    heightScale: .25
+    heightScale: 0.25
     normalMapFilter: 0
   isReadable: 0
   grayScaleToAlpha: 0
@@ -32,7 +32,7 @@ TextureImporter:
   cubemapConvolutionSteps: 8
   cubemapConvolutionExponent: 1.5
   seamlessCubemap: 0
-  textureFormat: -1
+  textureFormat: -3
   maxTextureSize: 2048
   textureSettings:
     filterMode: 0
@@ -48,7 +48,7 @@ TextureImporter:
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
-  spritePivot: {x: .5, y: .5}
+  spritePivot: {x: 0.5, y: 0.5}
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spritePixelsToUnits: 100
   alphaIsTransparency: 1
@@ -66,6 +66,19 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 162, y: 146}
+        - {x: 128, y: 146}
+        - {x: 112, y: 130}
+        - {x: 88, y: 123}
+        - {x: 62, y: 45}
+        - {x: 62, y: -64}
+        - {x: 67, y: -103}
+        - {x: 144, y: -178}
+        - {x: 223, y: -178}
+        - {x: 226, y: -167}
+        - {x: 226, y: -21}
+        - {x: 191, y: 85}
     - name: SchwingarSmallAnim_1
       rect:
         serializedVersion: 2
@@ -76,6 +89,21 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 120, y: -7}
+        - {x: 66, y: 98}
+        - {x: 32, y: 98}
+        - {x: 30, y: 96}
+        - {x: -14, y: 76}
+        - {x: -18, y: 42}
+        - {x: -18, y: -69}
+        - {x: -6, y: -83}
+        - {x: 59, y: -137}
+        - {x: 127, y: -178}
+        - {x: 222, y: -178}
+        - {x: 226, y: -161}
+        - {x: 226, y: -96}
+        - {x: 200, y: -73}
     - name: SchwingarSmallAnim_2
       rect:
         serializedVersion: 2
@@ -86,6 +114,21 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 226, y: -160}
+        - {x: 226, y: -93}
+        - {x: 157, y: -30}
+        - {x: 61, y: -30}
+        - {x: 22, y: -34}
+        - {x: -32, y: -81}
+        - {x: -34, y: -101}
+        - {x: -34, y: -202}
+        - {x: -18, y: -240}
+        - {x: -16, y: -242}
+        - {x: 50, y: -242}
+        - {x: 110, y: -177}
+        - {x: 144, y: -178}
+        - {x: 220, y: -181}
     - name: SchwingarSmallAnim_3
       rect:
         serializedVersion: 2
@@ -96,6 +139,20 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 154, y: 38}
+        - {x: 133, y: 50}
+        - {x: 102, y: 66}
+        - {x: 7, y: 66}
+        - {x: -50, y: 31}
+        - {x: -50, y: -18}
+        - {x: 76, y: -84}
+        - {x: 107, y: -132}
+        - {x: 155, y: -178}
+        - {x: 221, y: -178}
+        - {x: 226, y: -160}
+        - {x: 226, y: -62}
+        - {x: 191, y: -8}
     - name: SchwingarSmallAnim_4
       rect:
         serializedVersion: 2
@@ -106,6 +163,19 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 162, y: 146}
+        - {x: 128, y: 146}
+        - {x: 112, y: 130}
+        - {x: 88, y: 123}
+        - {x: 62, y: 45}
+        - {x: 62, y: -64}
+        - {x: 67, y: -103}
+        - {x: 144, y: -178}
+        - {x: 223, y: -178}
+        - {x: 226, y: -167}
+        - {x: 226, y: -21}
+        - {x: 191, y: 85}
     - name: SchwingarSmallAnim_5
       rect:
         serializedVersion: 2
@@ -116,6 +186,20 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 162, y: 146}
+        - {x: 128, y: 146}
+        - {x: 112, y: 130}
+        - {x: 88, y: 123}
+        - {x: 62, y: 45}
+        - {x: 62, y: -64}
+        - {x: 67, y: -103}
+        - {x: 144, y: -178}
+        - {x: 223, y: -178}
+        - {x: 226, y: -167}
+        - {x: 226, y: -21}
+        - {x: 191, y: 85}
+    outline: []
   spritePackingTag: 
   userData: 
   assetBundleName: 

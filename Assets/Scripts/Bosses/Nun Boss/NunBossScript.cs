@@ -36,14 +36,14 @@ public class NunBossScript : MonoBehaviour {
     {
         Instantiate(Krucifix1, transform.position + Krucifix1.transform.localPosition, Krucifix1.transform.localRotation);
         Instantiate(Krucifix2, transform.position + Krucifix2.transform.localPosition, Krucifix2.transform.localRotation);
-        NextAttackDelay = 7;
+        NextAttackDelay = 6;
         StartCoroutine(AttackRandomiser(NextAttackDelay));
     }
 
     void Nuns()
     {
         Instantiate(NunSpawner, transform.position + NunSpawner.transform.localPosition, NunSpawner.transform.localRotation);
-        NextAttackDelay = 15;
+        NextAttackDelay = 13;
         StartCoroutine(AttackRandomiser(NextAttackDelay));
     }
         

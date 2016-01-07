@@ -20,7 +20,7 @@ TextureImporter:
   bumpmap:
     convertToNormalMap: 0
     externalNormalMap: 0
-    heightScale: .25
+    heightScale: 0.25
     normalMapFilter: 0
   isReadable: 0
   grayScaleToAlpha: 0
@@ -29,7 +29,7 @@ TextureImporter:
   cubemapConvolutionSteps: 8
   cubemapConvolutionExponent: 1.5
   seamlessCubemap: 0
-  textureFormat: -1
+  textureFormat: -3
   maxTextureSize: 2048
   textureSettings:
     filterMode: 0
@@ -45,7 +45,7 @@ TextureImporter:
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
-  spritePivot: {x: .5, y: .5}
+  spritePivot: {x: 0.5, y: 0.5}
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spritePixelsToUnits: 100
   alphaIsTransparency: 1
@@ -63,6 +63,25 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 126, y: 192}
+        - {x: 96, y: 178}
+        - {x: 80, y: 162}
+        - {x: 35, y: 176}
+        - {x: 30, y: 134}
+        - {x: 30, y: -67}
+        - {x: 32, y: -66}
+        - {x: 46, y: -96}
+        - {x: 48, y: -98}
+        - {x: 62, y: -128}
+        - {x: 94, y: -160}
+        - {x: 130, y: -194}
+        - {x: 214, y: -194}
+        - {x: 226, y: -190}
+        - {x: 226, y: -73}
+        - {x: 206, y: -16}
+        - {x: 162, y: 194}
+        - {x: 128, y: 194}
     - name: Schwinganimation_1
       rect:
         serializedVersion: 2
@@ -73,6 +92,39 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 242, y: -79}
+        - {x: 235, y: -55}
+        - {x: 212, y: -46}
+        - {x: 144, y: -46}
+        - {x: 126, y: -64}
+        - {x: 80, y: -78}
+        - {x: 78, y: -80}
+        - {x: 33, y: -77}
+        - {x: 1, y: 3}
+        - {x: 42, y: 107}
+        - {x: 133, y: 167}
+        - {x: 130, y: 192}
+        - {x: 128, y: 194}
+        - {x: 64, y: 194}
+        - {x: 62, y: 192}
+        - {x: 32, y: 178}
+        - {x: 30, y: 176}
+        - {x: 0, y: 162}
+        - {x: -2, y: 160}
+        - {x: -32, y: 146}
+        - {x: -34, y: 144}
+        - {x: -65, y: 132}
+        - {x: -87, y: 116}
+        - {x: -133, y: 1}
+        - {x: -146, y: -80}
+        - {x: -146, y: -162}
+        - {x: -105, y: -222}
+        - {x: -44, y: -242}
+        - {x: 119, y: -242}
+        - {x: 183, y: -210}
+        - {x: 216, y: -181}
+        - {x: 242, y: -133}
     - name: Schwinganimation_2
       rect:
         serializedVersion: 2
@@ -83,6 +135,26 @@ TextureImporter:
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 210, y: 0}
+        - {x: 211, y: 8}
+        - {x: 180, y: 40}
+        - {x: 122, y: 66}
+        - {x: 11, y: 66}
+        - {x: 14, y: 50}
+        - {x: -64, y: 50}
+        - {x: -66, y: 48}
+        - {x: -97, y: 35}
+        - {x: -131, y: 4}
+        - {x: -146, y: -32}
+        - {x: -146, y: -66}
+        - {x: -49, y: -85}
+        - {x: 78, y: -97}
+        - {x: 140, y: -130}
+        - {x: 217, y: -130}
+        - {x: 242, y: -107}
+        - {x: 242, y: -60}
+    outline: []
   spritePackingTag: 
   userData: 
   assetBundleName: 

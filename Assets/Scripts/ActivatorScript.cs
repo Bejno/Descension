@@ -22,10 +22,6 @@ public class ActivatorScript : MonoBehaviour {
             {
                 obj.SetActive(false);
             }
-        }
-
-        
+        }   
     }
-
-
 }
