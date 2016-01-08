@@ -49,15 +49,21 @@ public class TypewriterScript : MonoBehaviour {
 		if (timeLeft <= 0f) {
 			// Next letter!
 			AddRemainingTime();
-			uiTarget.text += currentText.Substring(uiTarget.text.Length, 1);
+			string nextChar = currentText.Substring(uiTarget.text.Length, 1);
+            uiTarget.text += nextChar;
+           
+            if (nextChar != " " && nextChar != "\n")
+                SoundManagerScript.PlayTypeWriterSound();
+            
+            // Check if done
+            if (uiTarget.text.Length.Equals( currentText.Length))
+            {
+                active = false;
+                anim.SetTrigger("Laugh");
+            }
 		}
 
-        // Check if done
-        if (uiTarget.text.Length == currentText.Length)
-        {
-            active = false;
-            anim.SetTrigger("Laugh");
-        }
+        
     }
 
 	void AddRemainingTime() {

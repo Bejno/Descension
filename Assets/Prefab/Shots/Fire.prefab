@@ -15,6 +15,7 @@ GameObject:
   - 114: {fileID: 11446844}
   - 114: {fileID: 11415484}
   - 114: {fileID: 11418084}
+  - 114: {fileID: 11434648}
   m_Layer: 0
   m_Name: Fire
   m_TagString: Shot
@@ -106,6 +107,22 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   partical: {fileID: 114634, guid: 80eaa1d017c1c984dbae9369c4c45d7b, type: 2}
+--- !u!114 &11434648
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 153788}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c1fde3b8101efaa449118d553d3bfa0f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  atStart: 1
+  playFireBurst: 1
+  playHolyBell: 0
+  playPaperTear: 0
+  playTypeWriter: 0
 --- !u!114 &11446844
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -182,6 +199,10 @@ Prefab:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 9bc35c0c0c1743a4b81be112f6d8fbc9, type: 2}
+    - target: {fileID: 0}
+      propertyPath: playFireBurst
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 153788}

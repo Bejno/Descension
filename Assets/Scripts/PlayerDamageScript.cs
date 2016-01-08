@@ -9,6 +9,7 @@ public class PlayerDamageScript : MonoBehaviour {
     public Animator anim;
     public float flashDelay = 3f;
     public float damageDelay; // <-- Invincibility time in seconds
+    public bool playJoke = true;
 
     private float invincTime;
     private bool isInvincible { get { return invincTime > 0; } }
@@ -40,6 +41,8 @@ public class PlayerDamageScript : MonoBehaviour {
                 death.AtDeath();
 
             player.ModifyHealth(1);
+
+            if (playJoke)
             joke.Writeout();
         }
         else if (other.gameObject.tag == "Boss" && !isInvincible)

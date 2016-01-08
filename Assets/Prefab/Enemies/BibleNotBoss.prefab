@@ -63,6 +63,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 434006}
   - 114: {fileID: 11494468}
+  - 114: {fileID: 11453748}
   m_Layer: 0
   m_Name: ParticalSystemPage
   m_TagString: Untagged
@@ -218,6 +219,24 @@ MonoBehaviour:
   Boss: 0
   deathParticle: {fileID: 115768, guid: 25f9960092c634147be7a431c9c0c055, type: 2}
   wave: 0
+--- !u!114 &11453748
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 154408}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c1fde3b8101efaa449118d553d3bfa0f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  atStart: 1
+  playFireBurst: 0
+  playHolyBell: 0
+  playPaperTear: 0
+  playTypeWriter: 0
+  playWingFlap: 0
+  playPoof: 1
 --- !u!114 &11477580
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -233,6 +252,7 @@ MonoBehaviour:
   speed: 5
   turnSpeed: 200
   shotSelf: 0
+  aimOffset: 0
 --- !u!114 &11494468
 MonoBehaviour:
   m_ObjectHideFlags: 1

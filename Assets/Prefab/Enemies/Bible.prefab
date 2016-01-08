@@ -31,6 +31,7 @@ GameObject:
   - 61: {fileID: 6159666}
   - 114: {fileID: 11483140}
   - 114: {fileID: 11462526}
+  - 114: {fileID: 11468062}
   m_Layer: 0
   m_Name: Bible
   m_TagString: Damage
@@ -81,6 +82,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 426260}
   - 114: {fileID: 11436182}
+  - 114: {fileID: 11477130}
   m_Layer: 0
   m_Name: ParticalSystemPage
   m_TagString: Untagged
@@ -215,6 +217,7 @@ MonoBehaviour:
   speed: 5
   turnSpeed: 200
   shotSelf: 0
+  aimOffset: 0
 --- !u!114 &11436182
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -238,6 +241,42 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 492da344b7b7a5f4c931f01d84a0d8d7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &11468062
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 146458}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c1fde3b8101efaa449118d553d3bfa0f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  atStart: 0
+  playFireBurst: 0
+  playHolyBell: 0
+  playPaperTear: 1
+  playTypeWriter: 0
+  playWingFlap: 0
+  playPoof: 0
+--- !u!114 &11477130
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 189270}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c1fde3b8101efaa449118d553d3bfa0f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  atStart: 1
+  playFireBurst: 0
+  playHolyBell: 0
+  playPaperTear: 0
+  playTypeWriter: 0
+  playWingFlap: 0
+  playPoof: 1
 --- !u!114 &11483140
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -3399,6 +3438,14 @@ Prefab:
       propertyPath: enemySprite
       value: 
       objectReference: {fileID: 21219914}
+    - target: {fileID: 0}
+      propertyPath: playPaperTear
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: atStart
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 146458}

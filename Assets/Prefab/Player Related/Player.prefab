@@ -47,6 +47,7 @@ GameObject:
   - 114: {fileID: 11416390}
   - 114: {fileID: 11465686}
   - 114: {fileID: 11499662}
+  - 114: {fileID: 11417104}
   m_Layer: 8
   m_Name: Player
   m_TagString: Player
@@ -265,6 +266,23 @@ MonoBehaviour:
   shotLeft: {fileID: 182392, guid: b6d4710c810297c498ed5ced75dbdacc, type: 2}
   shotRight: {fileID: 167588, guid: 54bac2971dea6a14394749cfa53c8559, type: 2}
   shotDown: {fileID: 162488, guid: 104459b9cf5f1754484f0b598e7e7e2e, type: 2}
+--- !u!114 &11417104
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 147306}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c1fde3b8101efaa449118d553d3bfa0f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  atStart: 0
+  playFireBurst: 0
+  playHolyBell: 0
+  playPaperTear: 0
+  playTypeWriter: 0
+  playWingFlap: 1
 --- !u!114 &11465686
 MonoBehaviour:
   m_ObjectHideFlags: 1

@@ -63,6 +63,7 @@ GameObject:
   - 61: {fileID: 6128570}
   - 114: {fileID: 11481490}
   - 114: {fileID: 11448272}
+  - 114: {fileID: 11431670}
   m_Layer: 0
   m_Name: SummonNun
   m_TagString: Damage
@@ -152,6 +153,26 @@ BoxCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Size: {x: 1.65, y: 4.55}
+--- !u!114 &11431670
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 167060}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c1fde3b8101efaa449118d553d3bfa0f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  atStart: 0
+  playFireBurst: 0
+  playHolyBell: 0
+  playPaperTear: 0
+  playTypeWriter: 0
+  playWingFlap: 0
+  playPoof: 1
+  playMusic: 0
+  volume: 0.5
 --- !u!114 &11436364
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -3315,6 +3336,14 @@ Prefab:
       propertyPath: enemySprite
       value: 
       objectReference: {fileID: 21224276}
+    - target: {fileID: 0}
+      propertyPath: playPoof
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: atStart
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 167060}

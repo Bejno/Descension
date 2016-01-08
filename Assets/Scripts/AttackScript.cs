@@ -105,6 +105,9 @@ public class AttackScript : MonoBehaviour {
         // Spawn it
         print("Spawn " + currentShot);
         Instantiate(currentShot, transform.position + currentShot.transform.localPosition, currentShot.transform.localRotation);
+        var sound = GetComponent<SoundActivatorScript>();
+        if (sound)
+            sound.PlaySound();
 
         // Reset
         currentShot = null;

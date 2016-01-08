@@ -46,6 +46,10 @@ public class HealthScript : MonoBehaviour {
 
             Instantiate(deathParticle, transform.position + deathParticle.transform.localPosition, deathParticle.transform.localRotation);
 
+            var sound = GetComponent<SoundActivatorScript>();
+            if(sound)
+            sound.PlaySound();
+
         StartCoroutine(DeathDelay());
     }
 
