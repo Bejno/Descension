@@ -55,12 +55,14 @@ public class NunBossScript : MonoBehaviour {
     IEnumerator Fire()
     {
 
-        yield return new WaitForSeconds(FireDelay);
+        
         foreach (var trigger in GetComponentsInChildren<AimScript>()) {
             trigger.Attack();
         }
-        FireAttackRepeat -= 1;
 
+        FireAttackRepeat -= 1;
+        yield return new WaitForSeconds(FireDelay);
+        
         if(FireAttackRepeat > 0)
         {
             StartCoroutine(Fire());
@@ -68,7 +70,7 @@ public class NunBossScript : MonoBehaviour {
         else
         {
             FireAttackRepeat = 3;
-            NextAttackDelay = 3;
+            NextAttackDelay = 1;
             StartCoroutine(AttackRandomiser(NextAttackDelay));
         }
     }

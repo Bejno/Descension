@@ -277,6 +277,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 11407208}
+  joke: {fileID: 0}
   playerSprite: {fileID: 21275724}
   anim: {fileID: 9599256}
   flashDelay: 1

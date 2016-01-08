@@ -4,6 +4,7 @@ using System.Collections;
 public class PlayerDamageScript : MonoBehaviour {
 
     public PlayerScript player;
+    public TypewriterScript joke;
     public SpriteRenderer playerSprite;
     public Animator anim;
     public float flashDelay = 3f;
@@ -39,6 +40,7 @@ public class PlayerDamageScript : MonoBehaviour {
                 death.AtDeath();
 
             player.ModifyHealth(1);
+            joke.Writeout();
         }
         else if (other.gameObject.tag == "Boss" && !isInvincible)
         {

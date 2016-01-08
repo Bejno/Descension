@@ -7,7 +7,7 @@ public class TypewriterScript : MonoBehaviour {
     public Animator anim;
     public Text uiTarget;
 
-    [TextArea]
+    [Multiline]
 	public string[] text;
 	public float lettersPerSecond = 1f;
 	public float secondsPerLetter = 1f;

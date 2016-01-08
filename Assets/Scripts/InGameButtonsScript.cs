@@ -3,7 +3,6 @@ using System.Collections;
 
 public class InGameButtonsScript : MonoBehaviour {
 
-    public float timeSlowDeley = 1f;
     public GameObject buttons;
 
     // Update is called once per frame

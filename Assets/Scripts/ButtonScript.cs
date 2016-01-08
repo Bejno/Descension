@@ -5,6 +5,7 @@ using System.Collections;
 public class ButtonScript : MonoBehaviour {
 
     public Animator anim;
+    public GameObject buttons;
 
     public void Restart()
     {
@@ -19,6 +20,7 @@ public class ButtonScript : MonoBehaviour {
         SceneManager.LoadScene("Menu");
         LevelTimer.playerDead = false;
         AimScript.playerDead = false;
+        LevelTimer.PauseMenu = false;
     }
 
     public void Play()
@@ -36,5 +38,11 @@ public class ButtonScript : MonoBehaviour {
     public void Options()
     {
         print("Git chunging");
+    }
+
+    public void Resume()
+    {
+        LevelTimer.PauseMenu = false;
+        buttons.SetActive(false);
     }
 }
