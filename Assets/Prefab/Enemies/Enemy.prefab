@@ -284,12 +284,11 @@ MonoBehaviour:
   atStart: 0
   playFireBurst: 0
   playHolyBell: 0
-  playPaperTear: 0
+  playPaperTear: 1
   playTypeWriter: 0
   playWingFlap: 0
-  playPoof: 1
+  playPoof: 0
   playMusic: 0
-  volume: 0.5
 --- !u!212 &21212914
 SpriteRenderer:
   m_ObjectHideFlags: 1
@@ -510,6 +509,10 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: playPoof
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: playPaperTear
       value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []

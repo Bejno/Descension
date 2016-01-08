@@ -496,6 +496,53 @@ CanvasRenderer:
     type: 2}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 83471073}
+--- !u!1 &284313127
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 284313129}
+  - 114: {fileID: 284313128}
+  m_Layer: 0
+  m_Name: Music
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &284313128
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 284313127}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c1fde3b8101efaa449118d553d3bfa0f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  atStart: 1
+  playFireBurst: 0
+  playHolyBell: 0
+  playPaperTear: 0
+  playTypeWriter: 0
+  playWingFlap: 0
+  playPoof: 0
+  playMusic: 1
+--- !u!4 &284313129
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 284313127}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.70443296, y: -0.08711547, z: -5}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 10
 --- !u!1 &455791379
 GameObject:
   m_ObjectHideFlags: 0
@@ -1526,6 +1573,72 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 5
+--- !u!1 &2045910237
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 2045910240}
+  - 114: {fileID: 2045910239}
+  - 114: {fileID: 2045910238}
+  m_Layer: 0
+  m_Name: Sound
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &2045910238
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2045910237}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c1fde3b8101efaa449118d553d3bfa0f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  atStart: 0
+  playFireBurst: 0
+  playHolyBell: 0
+  playPaperTear: 0
+  playTypeWriter: 0
+  playWingFlap: 0
+  playPoof: 0
+  playMusic: 0
+--- !u!114 &2045910239
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2045910237}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 25ba33d066c5f6642afdfa8fd7bce78f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  typeWriter: {fileID: 8300000, guid: 83aa03c125831e64cbcb211af771282b, type: 3}
+  holyBell: {fileID: 8300000, guid: cf701b39d43a90b46ab4454c9bc213a3, type: 3}
+  tearPaper: {fileID: 8300000, guid: 54c6427725b43e24eb2a74dccac7d02c, type: 3}
+  fireBurst: {fileID: 8300000, guid: fe71d62417100d343b6dea100d8c6994, type: 3}
+  wingFlap: {fileID: 8300000, guid: a394c58e65a827241903e7c136411e20, type: 3}
+  poof: {fileID: 8300000, guid: f77dc6f84cb2c1c459656f60264d67a5, type: 3}
+  music: {fileID: 8300000, guid: 2c85ed3d246299f4987d98d370b04c41, type: 3}
+--- !u!4 &2045910240
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2045910237}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.16975996, y: 0.003520593, z: -0.5}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 11
 --- !u!1 &2048787105
 GameObject:
   m_ObjectHideFlags: 0

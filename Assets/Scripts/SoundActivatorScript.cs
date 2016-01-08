@@ -12,8 +12,6 @@ public class SoundActivatorScript : MonoBehaviour {
     public bool playPoof = false;
     public bool playMusic = false;
 
-    public float volume = 100f;
-
     void Start () {
 
         if (atStart)
@@ -50,7 +48,7 @@ public class SoundActivatorScript : MonoBehaviour {
         }
         else if (playMusic)
         {
-            SoundManagerScript.PlayMusic(volume);
+            SoundManagerScript.PlayMusic();
         }
 
 
