@@ -10,9 +10,10 @@ GameObject:
   - 4: {fileID: 449476}
   - 212: {fileID: 21283606}
   - 114: {fileID: 11411150}
+  - 114: {fileID: 11492508}
   m_Layer: 0
   m_Name: Clouds_0
-  m_TagString: Untagged
+  m_TagString: Cloud
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -45,6 +46,22 @@ MonoBehaviour:
   BorderY: 20
   BorderX: -20
   Return: -80
+--- !u!114 &11492508
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 158254}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d7559962a041fa447999ea27bd983f68, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  deathTime: 2
+  randomTime: 1
+  spawnPartical: 1
+  startAtSpawn: 0
+  partical: {fileID: 178514, guid: 025e19f961a364443a6cee96c10b6e67, type: 2}
 --- !u!212 &21283606
 SpriteRenderer:
   m_ObjectHideFlags: 1
@@ -91,6 +108,30 @@ Prefab:
       value: 
       objectReference: {fileID: 21300000, guid: 6af9a17c0a1218049b1088dc6bf16e6e,
         type: 3}
+    - target: {fileID: 0}
+      propertyPath: m_TagString
+      value: Cloud
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: partical
+      value: 
+      objectReference: {fileID: 178514, guid: 025e19f961a364443a6cee96c10b6e67, type: 2}
+    - target: {fileID: 0}
+      propertyPath: randomTime
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: spawnPartical
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: deathTime
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: startAtSpawn
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 158254}

@@ -8,6 +8,7 @@ public class HealthScript : MonoBehaviour {
     public SpriteRenderer enemySprite;
     public bool miniBoss = false;
     public bool Boss = false;
+    public bool NunBoss = false;
     public GameObject deathParticle;
     //public GameObject NextWave;
     public NextWave wave;
@@ -29,6 +30,12 @@ public class HealthScript : MonoBehaviour {
         if (miniBoss)  {
             var damage = FindObjectOfType<NextWaveScript>();
             damage.LosePoints();
+        }
+
+        if (NunBoss)
+        {
+            var bossScript = FindObjectOfType<NunBossDeathScript>();
+            bossScript.DeathTrigger();
         }
 
         if (Boss)
@@ -65,9 +72,14 @@ public class HealthScript : MonoBehaviour {
     {
 
         yield return new WaitForSeconds(0.05f);
-        Destroy(gameObject);
 
-
+        if (!NunBoss)
+            Destroy(gameObject);
+        else
+        {
+            PlayerScript.win = true;
+            NunBossScript.alive = false;
+        }
     }
 
     public enum NextWave

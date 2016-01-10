@@ -30,6 +30,8 @@ GameObject:
   - 61: {fileID: 6176700}
   - 114: {fileID: 11405226}
   - 114: {fileID: 11411368}
+  - 114: {fileID: 11439306}
+  - 114: {fileID: 11459294}
   m_Layer: 0
   m_Name: Nun Boss
   m_TagString: Boss
@@ -965,6 +967,7 @@ MonoBehaviour:
   enemySprite: {fileID: 21264850}
   miniBoss: 0
   Boss: 0
+  NunBoss: 1
   deathParticle: {fileID: 133166, guid: 4994bad1d78157c469832e9cddb69795, type: 2}
   wave: 0
 --- !u!114 &11411368
@@ -1019,6 +1022,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ee8af77a99d4ae84c95cc653f525ac53, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &11439306
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 110572}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a17006a4e2ae8024c8a4d377dc5ed2fd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &11446692
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1041,6 +1055,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ee8af77a99d4ae84c95cc653f525ac53, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &11459294
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 110572}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 49c803d822cab7c49b08b93a7f918816, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  partical: {fileID: 178514, guid: 025e19f961a364443a6cee96c10b6e67, type: 2}
 --- !u!114 &11459430
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1113,8 +1139,9 @@ MonoBehaviour:
   playTypeWriter: 0
   playWingFlap: 0
   playPoof: 0
+  playLaugh: 0
+  playDamage: 0
   playMusic: 0
-  volume: 0.5
 --- !u!114 &11491412
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -4638,6 +4665,26 @@ Prefab:
       propertyPath: playHolyBell
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: NunBoss
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: Player
+      value: 
+      objectReference: {fileID: 147306, guid: 9b04855d70f47654cb6699ec51128735, type: 2}
+    - target: {fileID: 0}
+      propertyPath: target
+      value: 
+      objectReference: {fileID: 494560, guid: a8b77ef41c1d8c14c837d73aac1f8499, type: 2}
+    - target: {fileID: 0}
+      propertyPath: Cinematic
+      value: 
+      objectReference: {fileID: 102558, guid: 46d42decc13f6f64fa40e0aa9545ec80, type: 2}
+    - target: {fileID: 0}
+      propertyPath: partical
+      value: 
+      objectReference: {fileID: 178514, guid: 025e19f961a364443a6cee96c10b6e67, type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 110572}

@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: 50de5501a759ffb4aba345acf6601ec2
-timeCreated: 1452435147
+timeCreated: 1452454048
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
@@ -25,6 +25,8 @@ TextureImporter:
     21300036: SchwingarBurning_18
     21300038: SchwingarBurning_19
     21300040: SchwingarBurning_20
+    21300042: SchwingarBurning_21
+    21300044: SchwingarBurning_22
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -494,6 +496,44 @@ TextureImporter:
         - {x: 41.5, y: -30.5}
         - {x: 41.5, y: -21.5}
         - {x: 39.5, y: -17.5}
+    - name: SchwingarBurning_21
+      rect:
+        serializedVersion: 2
+        x: 10752
+        y: 0
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 31.5, y: -20.5}
+        - {x: 26.5, y: -24.5}
+        - {x: 26.5, y: -30.5}
+        - {x: 28.5, y: -32.5}
+        - {x: 38.5, y: -32.5}
+        - {x: 41.5, y: -30.5}
+        - {x: 41.5, y: -24.5}
+        - {x: 39.5, y: -20.5}
+    - name: SchwingarBurning_22
+      rect:
+        serializedVersion: 2
+        x: 11264
+        y: 0
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 37.5, y: -22.5}
+        - {x: 35.5, y: -24.5}
+        - {x: 35.5, y: -27.5}
+        - {x: 37.5, y: -29.5}
+        - {x: 40.5, y: -29.5}
+        - {x: 42.5, y: -27.5}
+        - {x: 42.5, y: -24.5}
+        - {x: 40.5, y: -22.5}
     outline: []
   spritePackingTag: 
   userData: 

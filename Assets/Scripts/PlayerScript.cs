@@ -9,6 +9,7 @@ public class PlayerScript : MonoBehaviour
     public Rigidbody2D rbody;
     public int health, maxHealth;
     public GameObject deathPartical;
+    public static bool win = false;
 
     private Vector2 outsideForces;
 
@@ -21,8 +22,8 @@ public class PlayerScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
-        float inputX = Input.GetAxis("Horizontal");
+        if (!win) {
+            float inputX = Input.GetAxis("Horizontal");
         float inputY = Input.GetAxis("Vertical");
 
         Vector2 movement = new Vector2(speed.x * inputX, speed.y * inputY);
@@ -32,11 +33,12 @@ public class PlayerScript : MonoBehaviour
         outsideForces = Vector2.Lerp(outsideForces, Vector2.zero, outsideDrag * Time.deltaTime);
 
         rbody.velocity = movement + outsideForces;
-
+        }
     }
 
     public void AddOutsideForce(Vector2 force) {
-        outsideForces += force;
+        if (!win)
+            outsideForces += force;
     }
 
     public void SetHealth(int health)

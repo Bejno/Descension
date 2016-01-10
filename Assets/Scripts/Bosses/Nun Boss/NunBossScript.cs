@@ -10,6 +10,8 @@ public class NunBossScript : MonoBehaviour {
     public float NextAttackDelay;
     public float currentAttack;
 
+    public static bool alive = true;
+
     public float FireAttackRepeat = 3;
 
     void Start()
@@ -34,22 +36,31 @@ public class NunBossScript : MonoBehaviour {
 
     void Krucifix()
     {
-        Instantiate(Krucifix1, transform.position + Krucifix1.transform.localPosition, Krucifix1.transform.localRotation);
-        Instantiate(Krucifix2, transform.position + Krucifix2.transform.localPosition, Krucifix2.transform.localRotation);
-        NextAttackDelay = 6;
-        StartCoroutine(AttackRandomiser(NextAttackDelay));
+        if (alive)
+        {
+            Instantiate(Krucifix1, transform.position + Krucifix1.transform.localPosition, Krucifix1.transform.localRotation);
+            Instantiate(Krucifix2, transform.position + Krucifix2.transform.localPosition, Krucifix2.transform.localRotation);
+            NextAttackDelay = 6;
+            StartCoroutine(AttackRandomiser(NextAttackDelay));
+        }
+        
     }
 
     void Nuns()
     {
-        Instantiate(NunSpawner, transform.position + NunSpawner.transform.localPosition, NunSpawner.transform.localRotation);
-        NextAttackDelay = 13;
-        StartCoroutine(AttackRandomiser(NextAttackDelay));
+        if (alive)
+        {
+            Instantiate(NunSpawner, transform.position + NunSpawner.transform.localPosition, NunSpawner.transform.localRotation);
+            NextAttackDelay = 13;
+            StartCoroutine(AttackRandomiser(NextAttackDelay));
+        }
+            
     }
         
     void LaunchFire()
     {
-        StartCoroutine(Fire());
+        if (alive)
+            StartCoroutine(Fire());
     }
 
     IEnumerator Fire()
@@ -57,7 +68,8 @@ public class NunBossScript : MonoBehaviour {
 
         
         foreach (var trigger in GetComponentsInChildren<AimScript>()) {
-            trigger.Attack();
+            if (alive)
+                trigger.Attack();
         }
 
         FireAttackRepeat -= 1;
@@ -78,7 +90,8 @@ public class NunBossScript : MonoBehaviour {
     IEnumerator AttackRandomiser(float AttackDelay)
     {
         yield return new WaitForSeconds(AttackDelay);
-        Randomiser();
+        if (alive)
+            Randomiser();
     }
 
 }

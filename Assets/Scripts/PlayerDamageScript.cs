@@ -20,13 +20,13 @@ public class PlayerDamageScript : MonoBehaviour {
 
     void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.gameObject.tag == "Damage" && !isInvincible)
+        if (other.gameObject.tag == "Damage" && !isInvincible && PlayerScript.win == false)
         {
             player.ModifyHealth(-1);
             SoundManagerScript.PlayDamageSound();
             TurnInvincible();
         }
-        else if (other.gameObject.tag == "Shot" && !isInvincible)
+        else if (other.gameObject.tag == "Shot" && !isInvincible && PlayerScript.win == false)
         {
             var death = other.GetComponent<DeathAnimationScript>();
             if(death)
@@ -36,7 +36,7 @@ public class PlayerDamageScript : MonoBehaviour {
             SoundManagerScript.PlayDamageSound();
             TurnInvincible();
         }
-        else if (other.gameObject.tag == "Life")
+        else if (other.gameObject.tag == "Life" && PlayerScript.win == false)
         {
             var death = other.GetComponent<DeathAnimationScript>();
             if (death)
@@ -47,7 +47,7 @@ public class PlayerDamageScript : MonoBehaviour {
             if (playJoke)
             joke.Writeout();
         }
-        else if (other.gameObject.tag == "Boss" && !isInvincible)
+        else if (other.gameObject.tag == "Boss" && !isInvincible && PlayerScript.win == false)
         {
             player.ModifyHealth(-1);
             SoundManagerScript.PlayDamageSound();

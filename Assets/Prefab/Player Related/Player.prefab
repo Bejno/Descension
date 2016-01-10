@@ -54,7 +54,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!1 &154690
 GameObject:
   m_ObjectHideFlags: 0
@@ -110,7 +110,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 147306}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 5, z: 0}
   m_LocalScale: {x: 0.5, y: 0.5, z: 0.7658578}
   m_Children:
   - {fileID: 484024}
@@ -283,6 +283,10 @@ MonoBehaviour:
   playPaperTear: 0
   playTypeWriter: 0
   playWingFlap: 1
+  playPoof: 0
+  playLaugh: 0
+  playDamage: 0
+  playMusic: 0
 --- !u!114 &11465686
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -300,6 +304,7 @@ MonoBehaviour:
   anim: {fileID: 9599256}
   flashDelay: 1
   damageDelay: 2
+  playJoke: 1
 --- !u!114 &11499662
 MonoBehaviour:
   m_ObjectHideFlags: 1

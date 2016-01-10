@@ -28,15 +28,15 @@ public class AttackScript : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-        if (Input.GetButtonDown("Space") && stamina >= 25 && !LevelTimer.PauseMenu)      {
+        if (Input.GetButtonDown("Space") && stamina >= 25 && !LevelTimer.PauseMenu && PlayerScript.win == false)      {
             AttackDown();
             //player.health = Mathf.Min(player.maxHealth, --player.health);
         }
-        else if (Input.GetButtonDown("AttackLeft") && stamina >= 25 && !LevelTimer.PauseMenu)      {
+        else if (Input.GetButtonDown("AttackLeft") && stamina >= 25 && !LevelTimer.PauseMenu && PlayerScript.win == false)      {
             AttackLeft();
             //player.health = Mathf.Min(player.maxHealth, ++player.health);
         }
-        else if (Input.GetButtonDown("AttackRight") && stamina >= 25 && !LevelTimer.PauseMenu)      {
+        else if (Input.GetButtonDown("AttackRight") && stamina >= 25 && !LevelTimer.PauseMenu && PlayerScript.win == false)      {
             AttackRight();
         }
 
