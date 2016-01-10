@@ -68,6 +68,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 434070}
   - 114: {fileID: 11464120}
+  - 114: {fileID: 11424252}
   m_Layer: 0
   m_Name: ParticalSystemPoof
   m_TagString: Untagged
@@ -228,6 +229,27 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   partical: {fileID: 133166, guid: 4994bad1d78157c469832e9cddb69795, type: 2}
+--- !u!114 &11424252
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 140656}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c1fde3b8101efaa449118d553d3bfa0f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  atStart: 1
+  playFireBurst: 0
+  playHolyBell: 0
+  playPaperTear: 0
+  playTypeWriter: 0
+  playWingFlap: 0
+  playPoof: 1
+  playLaugh: 0
+  playDamage: 0
+  playMusic: 0
 --- !u!114 &11434706
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -3447,6 +3469,10 @@ Prefab:
     - target: {fileID: 0}
       propertyPath: speed
       value: 30
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: playPoof
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}

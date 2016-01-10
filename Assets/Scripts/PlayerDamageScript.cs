@@ -23,6 +23,7 @@ public class PlayerDamageScript : MonoBehaviour {
         if (other.gameObject.tag == "Damage" && !isInvincible)
         {
             player.ModifyHealth(-1);
+            SoundManagerScript.PlayDamageSound();
             TurnInvincible();
         }
         else if (other.gameObject.tag == "Shot" && !isInvincible)
@@ -32,6 +33,7 @@ public class PlayerDamageScript : MonoBehaviour {
                death.AtDeath();
 
             player.ModifyHealth(-1);
+            SoundManagerScript.PlayDamageSound();
             TurnInvincible();
         }
         else if (other.gameObject.tag == "Life")
@@ -48,6 +50,7 @@ public class PlayerDamageScript : MonoBehaviour {
         else if (other.gameObject.tag == "Boss" && !isInvincible)
         {
             player.ModifyHealth(-1);
+            SoundManagerScript.PlayDamageSound();
             TurnInvincible();
         }
     }

@@ -11,6 +11,10 @@ class SoundManagerScript : MonoBehaviour {
     public AudioClip fireBurst;
     public AudioClip wingFlap;
     public AudioClip poof;
+    public AudioClip laugh;
+    public AudioClip damage;
+
+
     public AudioClip music;
 
     void Awake()
@@ -63,14 +67,24 @@ class SoundManagerScript : MonoBehaviour {
         instance.PlayAudio(instance.wingFlap, volume, pitch, loop);
     }
 
+    public static void PlayDamageSound(float volume = 1f, float pitch = 1f, bool loop = false)
+    {
+        instance.PlayAudio(instance.damage, volume, Random.Range(0.9f, 1.2f), loop);
+    }
+
     public static void PlayPoofSound(float volume = 1f, float pitch = 1f, bool loop = false)
     {
         instance.PlayAudio(instance.poof, volume, pitch, loop);
     }
 
+    public static void PlayLaughSound(float volume = 1f, float pitch = 1f, bool loop = false)
+    {
+        instance.PlayAudio(instance.laugh, volume, Random.Range(0.9f, 1.2f), loop);
+    }
+
     public static void PlayMusic(float volume = 1f, float pitch = 1f, bool loop = false)
     {
-        instance.PlayAudio(instance.music, volume, pitch, loop);
+        instance.PlayAudio(instance.music, volume, pitch, true);
     }
 
 }

@@ -10,6 +10,9 @@ public class SoundActivatorScript : MonoBehaviour {
     public bool playTypeWriter = false;
     public bool playWingFlap = false;
     public bool playPoof = false;
+    public bool playLaugh = false;
+    public bool playDamage = false;
+
     public bool playMusic = false;
 
     void Start () {
@@ -25,6 +28,10 @@ public class SoundActivatorScript : MonoBehaviour {
         if (playWingFlap)
         {
             SoundManagerScript.PlayWingFlapSound();
+        }
+        else if (playDamage)
+        {
+            SoundManagerScript.PlayDamageSound();
         }
         else if (playTypeWriter)
         {
@@ -45,6 +52,10 @@ public class SoundActivatorScript : MonoBehaviour {
         else if (playPoof)
         {
             SoundManagerScript.PlayPoofSound();
+        }
+        else if (playLaugh)
+        {
+            SoundManagerScript.PlayLaughSound();
         }
         else if (playMusic)
         {

@@ -14,7 +14,7 @@ public class NunBossScript : MonoBehaviour {
 
     void Start()
     {
-        Randomiser();
+        Krucifix();
     }
 
     delegate void AttackAction();

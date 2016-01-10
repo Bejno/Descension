@@ -24,8 +24,7 @@ public class AttackScript : MonoBehaviour {
     // Use this for initialization
     void Start () {
         staminaSlider.maxValue = staminaSlider.value = 125;
-	
-	}
+    }
 	
 	// Update is called once per frame
 	void Update () {
