@@ -12,6 +12,9 @@ public class HealthScript : MonoBehaviour {
     public GameObject deathParticle;
     //public GameObject NextWave;
     public NextWave wave;
+    public bool extraLife = false;
+    public GameObject apple;
+
 
     public void Damage () {
 
@@ -74,7 +77,13 @@ public class HealthScript : MonoBehaviour {
         yield return new WaitForSeconds(0.05f);
 
         if (!NunBoss)
+        {
             Destroy(gameObject);
+            if (extraLife)
+            {
+                Instantiate(apple, transform.position + apple.transform.localPosition, apple.transform.localRotation);
+            }
+        }
         else
         {
             PlayerScript.win = true;

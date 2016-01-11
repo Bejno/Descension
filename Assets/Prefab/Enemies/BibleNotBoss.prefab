@@ -217,8 +217,11 @@ MonoBehaviour:
   enemySprite: {fileID: 21224934}
   miniBoss: 0
   Boss: 0
+  NunBoss: 0
   deathParticle: {fileID: 115768, guid: 25f9960092c634147be7a431c9c0c055, type: 2}
   wave: 0
+  extraLife: 0
+  apple: {fileID: 183126, guid: b2c0ebae30b9c2743a9dd2bed2c467f7, type: 2}
 --- !u!114 &11453748
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -237,6 +240,9 @@ MonoBehaviour:
   playTypeWriter: 0
   playWingFlap: 0
   playPoof: 1
+  playLaugh: 0
+  playDamage: 0
+  playMusic: 0
 --- !u!114 &11477580
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -265,6 +271,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   deathTime: 1
+  randomTime: 0
+  spawnPartical: 0
+  startAtSpawn: 1
+  partical: {fileID: 0}
 --- !u!198 &19800972
 ParticleSystem:
   m_ObjectHideFlags: 1
@@ -3399,6 +3409,14 @@ Prefab:
       propertyPath: enemySprite
       value: 
       objectReference: {fileID: 21224934}
+    - target: {fileID: 0}
+      propertyPath: apple
+      value: 
+      objectReference: {fileID: 183126, guid: b2c0ebae30b9c2743a9dd2bed2c467f7, type: 2}
+    - target: {fileID: 0}
+      propertyPath: speed
+      value: 5
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 145542}

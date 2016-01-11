@@ -8,6 +8,7 @@ public class LevelTimer : MonoBehaviour {
     public float timeSlowDeley = 1f;
     public List<Element> wave1 = new List<Element>();
     public List<Element> wave2 = new List<Element>();
+    public List<Element> BossWave = new List<Element>();
 
     public static bool PauseMenu = false;
     public static bool playerDead = false;

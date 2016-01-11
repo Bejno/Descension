@@ -250,8 +250,11 @@ MonoBehaviour:
   enemySprite: {fileID: 21253982}
   miniBoss: 0
   Boss: 0
+  NunBoss: 0
   deathParticle: {fileID: 133166, guid: 4994bad1d78157c469832e9cddb69795, type: 2}
   wave: 0
+  extraLife: 0
+  apple: {fileID: 183126, guid: b2c0ebae30b9c2743a9dd2bed2c467f7, type: 2}
 --- !u!114 &11481978
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -288,6 +291,8 @@ MonoBehaviour:
   playTypeWriter: 0
   playWingFlap: 0
   playPoof: 0
+  playLaugh: 0
+  playDamage: 0
   playMusic: 0
 --- !u!212 &21212914
 SpriteRenderer:
@@ -515,6 +520,10 @@ Prefab:
       propertyPath: playPaperTear
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: apple
+      value: 
+      objectReference: {fileID: 183126, guid: b2c0ebae30b9c2743a9dd2bed2c467f7, type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 143230}

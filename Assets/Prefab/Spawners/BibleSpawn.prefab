@@ -73,7 +73,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   spawn: {fileID: 146458, guid: debdd2e5538ee214d9b7fef5f116e2c4, type: 2}
-  spawnTime: 1.1
+  spawnTime: 2
 --- !u!114 &11498092
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -85,7 +85,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d7559962a041fa447999ea27bd983f68, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  deathTime: 1.2
+  deathTime: 2.1
+  randomTime: 0
+  spawnPartical: 0
+  startAtSpawn: 1
+  partical: {fileID: 0}
 --- !u!198 &19812008
 ParticleSystem:
   m_ObjectHideFlags: 1
@@ -3187,6 +3191,14 @@ Prefab:
       propertyPath: spawn
       value: 
       objectReference: {fileID: 146458, guid: debdd2e5538ee214d9b7fef5f116e2c4, type: 2}
+    - target: {fileID: 0}
+      propertyPath: spawnTime
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: deathTime
+      value: 2.1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 140662}

@@ -1,0 +1,188 @@
+fileFormatVersion: 2
+guid: d648294f668c55f43a9fa90b4c55036b
+timeCreated: 1452469233
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: SmallNunSheet_0
+    21300002: SmallNunSheet_1
+    21300004: SmallNunSheet_2
+    21300006: SmallNunSheet_3
+  serializedVersion: 2
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 1
+    linearTexture: 0
+    correctGamma: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 0
+  cubemapConvolution: 0
+  cubemapConvolutionSteps: 7
+  cubemapConvolutionExponent: 1.5
+  seamlessCubemap: 0
+  textureFormat: -3
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: 0
+    aniso: 16
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  rGBM: 0
+  compressionQuality: 50
+  allowsAlphaSplitting: 0
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 100
+  alphaIsTransparency: 1
+  textureType: 8
+  buildTargetSettings: []
+  spriteSheet:
+    sprites:
+    - name: SmallNunSheet_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 256
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 82, y: -32}
+        - {x: 80, y: -30}
+        - {x: 66, y: -30}
+        - {x: 66, y: 48}
+        - {x: 65, y: 52}
+        - {x: 69, y: 225}
+        - {x: 65, y: 226}
+        - {x: -69, y: 226}
+        - {x: -66, y: 91}
+        - {x: -52, y: 65}
+        - {x: -66, y: 48}
+        - {x: -82, y: -32}
+        - {x: -82, y: -80}
+        - {x: -80, y: -82}
+        - {x: -50, y: -82}
+        - {x: -51, y: -193}
+        - {x: -21, y: -226}
+        - {x: 16, y: -226}
+        - {x: 34, y: -212}
+        - {x: 50, y: -196}
+        - {x: 82, y: -80}
+    - name: SmallNunSheet_1
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 0
+        width: 256
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 80, y: -30}
+        - {x: 66, y: -30}
+        - {x: 68, y: 49}
+        - {x: 49, y: 76}
+        - {x: 66, y: 92}
+        - {x: 66, y: 224}
+        - {x: 65, y: 226}
+        - {x: -69, y: 226}
+        - {x: -66, y: 91}
+        - {x: -50, y: 94}
+        - {x: -66, y: 48}
+        - {x: -82, y: -32}
+        - {x: -82, y: -80}
+        - {x: -80, y: -82}
+        - {x: -50, y: -82}
+        - {x: -53, y: -210}
+        - {x: -26, y: -226}
+        - {x: 21, y: -226}
+        - {x: 51, y: -209}
+        - {x: 82, y: -80}
+        - {x: 82, y: -32}
+    - name: SmallNunSheet_2
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 0
+        width: 256
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 80, y: -30}
+        - {x: 66, y: -30}
+        - {x: 66, y: 48}
+        - {x: 64, y: 50}
+        - {x: 66, y: 96}
+        - {x: 66, y: 224}
+        - {x: 64, y: 226}
+        - {x: -69, y: 226}
+        - {x: -66, y: 75}
+        - {x: -66, y: 48}
+        - {x: -82, y: -32}
+        - {x: -82, y: -80}
+        - {x: -80, y: -82}
+        - {x: -50, y: -82}
+        - {x: -52, y: -209}
+        - {x: -36, y: -226}
+        - {x: 36, y: -226}
+        - {x: 50, y: -212}
+        - {x: 82, y: -80}
+        - {x: 82, y: -32}
+    - name: SmallNunSheet_3
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 0
+        width: 256
+        height: 512
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline:
+      - - {x: 82, y: -32}
+        - {x: 80, y: -30}
+        - {x: 66, y: -30}
+        - {x: 66, y: 48}
+        - {x: 69, y: 225}
+        - {x: 65, y: 226}
+        - {x: -69, y: 226}
+        - {x: -66, y: 91}
+        - {x: -66, y: 48}
+        - {x: -82, y: -32}
+        - {x: -82, y: -80}
+        - {x: -80, y: -82}
+        - {x: -50, y: -82}
+        - {x: -50, y: -192}
+        - {x: -48, y: -194}
+        - {x: -36, y: -225}
+        - {x: -20, y: -242}
+        - {x: 20, y: -242}
+        - {x: 34, y: -228}
+        - {x: 50, y: -192}
+        - {x: 82, y: -80}
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

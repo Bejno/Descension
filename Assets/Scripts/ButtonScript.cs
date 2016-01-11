@@ -21,6 +21,7 @@ public class ButtonScript : MonoBehaviour {
         LevelTimer.playerDead = false;
         AimScript.playerDead = false;
         LevelTimer.PauseMenu = false;
+        SoundManagerScript.PlayTypeWriterSound();
     }
 
     public void Play()
@@ -28,21 +29,25 @@ public class ButtonScript : MonoBehaviour {
         var trigger = GetComponent<ActivatorScript>();
         trigger.Activate();
         anim.SetTrigger("Jump");
+        SoundManagerScript.PlayTypeWriterSound();
     }
 
     public void Exit()
     {
         Application.Quit();
+        SoundManagerScript.PlayTypeWriterSound();
     }
 
     public void Options()
     {
         print("Git chunging");
+        SoundManagerScript.PlayTypeWriterSound();
     }
 
     public void Resume()
     {
         LevelTimer.PauseMenu = false;
         buttons.SetActive(false);
+        SoundManagerScript.PlayTypeWriterSound();
     }
 }

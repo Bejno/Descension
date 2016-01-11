@@ -11,12 +11,13 @@ public class AttackTriggerScript : MonoBehaviour {
         StartCoroutine(Delay());
     }
 
+
     IEnumerator Delay()
     {
 
         yield return new WaitForSeconds(delay);
-        var trigger = GetComponent<AimScript>();
-        trigger.Attack();
+            var trigger = GetComponent<AimScript>();
+            trigger.Attack();
         StartCoroutine(Delay());
 
     }

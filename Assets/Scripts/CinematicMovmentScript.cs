@@ -9,18 +9,20 @@ public class CinematicMovmentScript : MonoBehaviour {
     public Transform target4;
     public Transform target5;
 
-    public SpriteRenderer background;
-    public SpriteRenderer background2;
-
     public bool firstMovment = false;
     public bool secondMovment = false;
     public bool thirdMovment = false;
     public bool fourthMovment = false;
 
+    public SpriteRenderer background;
+    public SpriteRenderer background2;
+
     public GameObject Player;
     public GameObject fakePlayer;
     public GameObject Sister;
     public float speed;
+
+    public GameObject EndGameMenu;
 
     public static bool Cinematic = false;
 
@@ -102,6 +104,7 @@ public class CinematicMovmentScript : MonoBehaviour {
         secondMovment = false;
         thirdMovment = false;
         fourthMovment = true;
-
+        yield return new WaitForSeconds(6f);
+        EndGameMenu.SetActive(true);
     }
 }

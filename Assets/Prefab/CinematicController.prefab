@@ -75,6 +75,7 @@ GameObject:
   - 4: {fileID: 407412}
   - 212: {fileID: 21265174}
   - 95: {fileID: 9506800}
+  - 114: {fileID: 11412812}
   m_Layer: 0
   m_Name: SchwingarBurning_0 (1)
   m_TagString: Untagged
@@ -140,6 +141,7 @@ GameObject:
   - 4: {fileID: 480660}
   - 212: {fileID: 21252810}
   - 95: {fileID: 9573928}
+  - 114: {fileID: 11481248}
   m_Layer: 0
   m_Name: SchwingarBurning_0
   m_TagString: Untagged
@@ -418,6 +420,18 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
+--- !u!114 &11412812
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 135702}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 49c803d822cab7c49b08b93a7f918816, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  partical: {fileID: 178514, guid: 025e19f961a364443a6cee96c10b6e67, type: 2}
 --- !u!114 &11416000
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -444,6 +458,7 @@ MonoBehaviour:
   fakePlayer: {fileID: 136662}
   Sister: {fileID: 109314}
   speed: 3
+  EndGameMenu: {fileID: 0}
 --- !u!114 &11420488
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -458,6 +473,18 @@ MonoBehaviour:
   activate:
   - {fileID: 0}
   ActivateTrue: 0
+--- !u!114 &11481248
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 166620}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 49c803d822cab7c49b08b93a7f918816, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  partical: {fileID: 178514, guid: 025e19f961a364443a6cee96c10b6e67, type: 2}
 --- !u!212 &21247894
 SpriteRenderer:
   m_ObjectHideFlags: 1
