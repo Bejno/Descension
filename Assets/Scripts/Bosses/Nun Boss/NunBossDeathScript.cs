@@ -5,12 +5,15 @@ public class NunBossDeathScript : MonoBehaviour {
 
     public SpriteRenderer bell;
     public Animator anim;
+    public GameObject music;
 
     public void DeathTrigger()
     {
         
         LevelTimer.playerDead = false;
         AimScript.playerDead = false;
+
+        Destroy(music);
 
         CinematicMovmentScript.Cinematic = true;
         var start = GameObject.Find("CinematicController").GetComponent<CinematicMovmentScript>();
@@ -66,7 +69,7 @@ public class NunBossDeathScript : MonoBehaviour {
 
     IEnumerator selfKill()
     {
-        yield return new WaitForSeconds(5f);
+        yield return new WaitForSeconds(6.7f);
         var kill = GetComponent<DeathAnimationScript>();
         kill.AtDeath();
 

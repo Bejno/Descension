@@ -8,7 +8,10 @@ public class LevelTimer : MonoBehaviour {
     public float timeSlowDeley = 1f;
     public List<Element> wave1 = new List<Element>();
     public List<Element> wave2 = new List<Element>();
-    public List<Element> BossWave = new List<Element>();
+    public List<Element> wave3 = new List<Element>();
+    public List<Element> wave4 = new List<Element>();
+    public List<Element> wave5 = new List<Element>();
+    public List<Element> boss = new List<Element>();
 
     public static bool PauseMenu = false;
     public static bool playerDead = false;
@@ -45,6 +48,30 @@ public class LevelTimer : MonoBehaviour {
     {
         // Start wave 2
         StartCoroutine(Level(wave2));
+    }
+
+    public void Wave3()
+    {
+        // Start wave 3
+        StartCoroutine(Level(wave3));
+    }
+
+    public void Wave4()
+    {
+        // Start wave 4
+        StartCoroutine(Level(wave4));
+    }
+
+    public void Wave5()
+    {
+        // Start wave 5
+        StartCoroutine(Level(wave5));
+    }
+
+    public void Boss()
+    {
+        // Start Boss
+        StartCoroutine(Level(boss));
     }
 
     IEnumerator Level(List<Element> list) {

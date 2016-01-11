@@ -34,6 +34,7 @@ GameObject:
   - 61: {fileID: 6140606}
   - 114: {fileID: 11460824}
   - 114: {fileID: 11429264}
+  - 114: {fileID: 11466108}
   m_Layer: 0
   m_Name: SmallNunX
   m_TagString: Damage
@@ -957,7 +958,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 37137b40b9806db48afd13c934dcd107, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: {x: 0, y: 2}
+  speed: {x: 0, y: 3}
   direction: {x: 0, y: 1}
   BorderY: 20
   BorderX: -20
@@ -1005,7 +1006,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 922a29356ad0059499adf824e733bac3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  delay: 3
+  delay: 2.5
 --- !u!114 &11451036
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1039,8 +1040,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 638b0dc28816a5647869c398a83571de, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 2
-  maxHealth: 2
+  health: 1
+  maxHealth: 1
   points: 25
   enemySprite: {fileID: 21232976}
   miniBoss: 0
@@ -1072,6 +1073,28 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ee8af77a99d4ae84c95cc653f525ac53, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &11466108
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 103044}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c1fde3b8101efaa449118d553d3bfa0f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  atStart: 0
+  playFireBurst: 0
+  playHolyBell: 0
+  playPaperTear: 1
+  playTypeWriter: 0
+  playWingFlap: 0
+  playPoof: 0
+  playLaugh: 0
+  playDamage: 0
+  playChrunch: 0
+  playMusic: 0
 --- !u!114 &11469224
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -4475,14 +4498,15 @@ Prefab:
     - target: {fileID: 0}
       propertyPath: player
       value: 
-      objectReference: {fileID: 404864, guid: 9b04855d70f47654cb6699ec51128735, type: 2}
+      objectReference: {fileID: 11407208, guid: 9b04855d70f47654cb6699ec51128735,
+        type: 2}
     - target: {fileID: 0}
       propertyPath: deathParticle
       value: 
       objectReference: {fileID: 133166, guid: 4994bad1d78157c469832e9cddb69795, type: 2}
     - target: {fileID: 0}
       propertyPath: delay
-      value: 3
+      value: 2.5
       objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: m_Sprite
@@ -4513,6 +4537,26 @@ Prefab:
       propertyPath: apple
       value: 
       objectReference: {fileID: 183126, guid: b2c0ebae30b9c2743a9dd2bed2c467f7, type: 2}
+    - target: {fileID: 0}
+      propertyPath: health
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: maxHealth
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: speed.y
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: atStart
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: playPaperTear
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 103044}

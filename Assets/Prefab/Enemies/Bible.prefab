@@ -265,6 +265,7 @@ MonoBehaviour:
   playPoof: 0
   playLaugh: 0
   playDamage: 0
+  playChrunch: 0
   playMusic: 0
 --- !u!114 &11477130
 MonoBehaviour:
@@ -286,6 +287,7 @@ MonoBehaviour:
   playPoof: 1
   playLaugh: 0
   playDamage: 0
+  playChrunch: 0
   playMusic: 0
 --- !u!114 &11483140
 MonoBehaviour:
@@ -298,8 +300,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 638b0dc28816a5647869c398a83571de, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  health: 1
-  maxHealth: 1
+  health: 2
+  maxHealth: 2
   points: 10
   enemySprite: {fileID: 21219914}
   miniBoss: 1
@@ -3442,7 +3444,8 @@ Prefab:
     - target: {fileID: 0}
       propertyPath: player
       value: 
-      objectReference: {fileID: 404864, guid: 9b04855d70f47654cb6699ec51128735, type: 2}
+      objectReference: {fileID: 11407208, guid: 9b04855d70f47654cb6699ec51128735,
+        type: 2}
     - target: {fileID: 0}
       propertyPath: deathParticle
       value: 
@@ -3466,6 +3469,18 @@ Prefab:
     - target: {fileID: 0}
       propertyPath: speed
       value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: health
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: maxHealth
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: Boss
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}

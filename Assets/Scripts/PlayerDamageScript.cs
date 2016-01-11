@@ -44,6 +44,8 @@ public class PlayerDamageScript : MonoBehaviour {
 
             player.ModifyHealth(1);
 
+            SoundManagerScript.PlayChrunch();
+
             if (playJoke)
             joke.Writeout();
         }

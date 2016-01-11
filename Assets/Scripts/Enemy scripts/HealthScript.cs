@@ -21,6 +21,10 @@ public class HealthScript : MonoBehaviour {
         health -= 1;
         StartCoroutine(spriteFlash());
 
+        var sound = GetComponent<SoundActivatorScript>();
+        if (sound)
+            sound.PlaySound();
+
         if (health <= 0)
             Death();
 	}
@@ -56,10 +60,6 @@ public class HealthScript : MonoBehaviour {
 
             Instantiate(deathParticle, transform.position + deathParticle.transform.localPosition, deathParticle.transform.localRotation);
 
-            var sound = GetComponent<SoundActivatorScript>();
-            if(sound)
-            sound.PlaySound();
-
         StartCoroutine(DeathDelay());
     }
 
@@ -79,7 +79,7 @@ public class HealthScript : MonoBehaviour {
         if (!NunBoss)
         {
             Destroy(gameObject);
-            if (extraLife)
+            if (extraLife && GameObject.Find("Player").GetComponent<PlayerScript>().health < 3)
             {
                 Instantiate(apple, transform.position + apple.transform.localPosition, apple.transform.localRotation);
             }
@@ -93,6 +93,6 @@ public class HealthScript : MonoBehaviour {
 
     public enum NextWave
     {
-        none, Wave2, Wave3
+        none, Wave2, Wave3, Wave4, Wave5, Boss
     }
 }

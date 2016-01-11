@@ -293,6 +293,7 @@ MonoBehaviour:
   playPoof: 0
   playLaugh: 0
   playDamage: 0
+  playChrunch: 0
   playMusic: 0
 --- !u!212 &21212914
 SpriteRenderer:
@@ -524,6 +525,11 @@ Prefab:
       propertyPath: apple
       value: 
       objectReference: {fileID: 183126, guid: b2c0ebae30b9c2743a9dd2bed2c467f7, type: 2}
+    - target: {fileID: 0}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 11407208, guid: 9b04855d70f47654cb6699ec51128735,
+        type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 143230}

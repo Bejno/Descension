@@ -17,7 +17,9 @@ public class SpawnDelayScript : MonoBehaviour {
     {
 
         yield return new WaitForSeconds(spawnTime);
-        Instantiate(spawn, transform.position + spawn.transform.localPosition, spawn.transform.localRotation);
+        var clone = Instantiate(spawn, transform.position + spawn.transform.localPosition, spawn.transform.localRotation) as GameObject;
+        var timer = GameObject.Find("LevelTimer");
+        clone.transform.SetParent(timer.transform);
     }
 
 }

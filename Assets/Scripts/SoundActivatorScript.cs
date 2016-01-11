@@ -12,6 +12,7 @@ public class SoundActivatorScript : MonoBehaviour {
     public bool playPoof = false;
     public bool playLaugh = false;
     public bool playDamage = false;
+    public bool playChrunch = false;
 
     public bool playMusic = false;
 
@@ -60,6 +61,10 @@ public class SoundActivatorScript : MonoBehaviour {
         else if (playMusic)
         {
             SoundManagerScript.PlayMusic();
+        }
+        else if (playChrunch)
+        {
+            SoundManagerScript.PlayChrunch();
         }
 
 

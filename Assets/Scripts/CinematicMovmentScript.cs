@@ -39,8 +39,8 @@ public class CinematicMovmentScript : MonoBehaviour {
         }
 
         
-
         float step = speed * Time.deltaTime;
+
         if (firstMovment && !secondMovment && !thirdMovment && !fourthMovment)
         {
             Player.transform.position = Vector3.MoveTowards(Player.transform.position, target1.position, step);
@@ -68,7 +68,8 @@ public class CinematicMovmentScript : MonoBehaviour {
         secondMovment = false;
         thirdMovment = false;
         fourthMovment = false;
-        yield return new WaitForSeconds(6f);
+        speed = 5;
+        yield return new WaitForSeconds(6.7f);
         background2.color = background.color = new Color(0.90f, 0.90f, 0.90f, 0.90f);
         yield return new WaitForSeconds(0.25f);
         background2.color = background.color = new Color(0.80f, 0.80f, 0.80f, 0.80f);
@@ -87,6 +88,7 @@ public class CinematicMovmentScript : MonoBehaviour {
         yield return new WaitForSeconds(0.25f);
         background2.color = background.color = new Color(0.10f, 0.10f, 0.10f, 0.10f);
         yield return new WaitForSeconds(2f);
+        speed = 3;
         Player.SetActive(false);
         fakePlayer.SetActive(true);
         yield return new WaitForSeconds(2f);

@@ -13,6 +13,7 @@ class SoundManagerScript : MonoBehaviour {
     public AudioClip poof;
     public AudioClip laugh;
     public AudioClip damage;
+    public AudioClip chrunch;
 
 
     public AudioClip music;
@@ -84,7 +85,12 @@ class SoundManagerScript : MonoBehaviour {
 
     public static void PlayMusic(float volume = 1f, float pitch = 1f, bool loop = false)
     {
-        instance.PlayAudio(instance.music, volume, pitch, true);
+        instance.PlayAudio(instance.music, volume, pitch, false);
+    }
+
+    public static void PlayChrunch(float volume = 1f, float pitch = 1f, bool loop = false)
+    {
+        instance.PlayAudio(instance.chrunch, volume, pitch, false);
     }
 
 }

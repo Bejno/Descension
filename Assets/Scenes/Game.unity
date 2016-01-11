@@ -386,48 +386,6 @@ CanvasRenderer:
     type: 2}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 54143413}
---- !u!1001 &58047144
-Prefab:
-  m_ObjectHideFlags: 0
-  serializedVersion: 2
-  m_Modification:
-    m_TransformParent: {fileID: 0}
-    m_Modifications:
-    - target: {fileID: 414302, guid: a298c2ca15327ad4a8ff36826d8c9075, type: 2}
-      propertyPath: m_LocalPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 414302, guid: a298c2ca15327ad4a8ff36826d8c9075, type: 2}
-      propertyPath: m_LocalPosition.y
-      value: -5
-      objectReference: {fileID: 0}
-    - target: {fileID: 414302, guid: a298c2ca15327ad4a8ff36826d8c9075, type: 2}
-      propertyPath: m_LocalPosition.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 414302, guid: a298c2ca15327ad4a8ff36826d8c9075, type: 2}
-      propertyPath: m_LocalRotation.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 414302, guid: a298c2ca15327ad4a8ff36826d8c9075, type: 2}
-      propertyPath: m_LocalRotation.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 414302, guid: a298c2ca15327ad4a8ff36826d8c9075, type: 2}
-      propertyPath: m_LocalRotation.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 414302, guid: a298c2ca15327ad4a8ff36826d8c9075, type: 2}
-      propertyPath: m_LocalRotation.w
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 414302, guid: a298c2ca15327ad4a8ff36826d8c9075, type: 2}
-      propertyPath: m_RootOrder
-      value: 12
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
-  m_ParentPrefab: {fileID: 100100000, guid: a298c2ca15327ad4a8ff36826d8c9075, type: 2}
-  m_IsPrefabParent: 0
 --- !u!1 &87629229
 GameObject:
   m_ObjectHideFlags: 0
@@ -1361,7 +1319,6 @@ MonoBehaviour:
   text:
   - "\u201CI\u2019m sorry\u201D and \n\u201CI apologize\u201D\nmean the same \nthing.
     \   \n \nExcept at a \nfuneral.   "
-  - "Vad sa kniita?\n         \nFita.                    \nha.          "
   - "Where did the \nlittle boy go \nduring the \nexplosion?\n          \neverywhere.
     \  "
   - "Why did the \nboy fall out \nof the tree?   \n\nBecause he \nwas dead.\r \n\nWhy
@@ -1405,6 +1362,7 @@ MonoBehaviour:
   playPoof: 0
   playLaugh: 1
   playDamage: 0
+  playChrunch: 0
   playMusic: 0
 --- !u!1001 &368256299
 Prefab:
@@ -3602,6 +3560,7 @@ MonoBehaviour:
   playPoof: 0
   playLaugh: 0
   playDamage: 0
+  playChrunch: 0
   playMusic: 0
 --- !u!1 &1200838165
 GameObject:
@@ -4317,7 +4276,7 @@ GameObject:
   - 4: {fileID: 1701453902}
   - 82: {fileID: 1701453901}
   m_Layer: 0
-  m_Name: Music
+  m_Name: Level Music
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4334,7 +4293,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: 8ce5ce430e0e68044a52ec30a7f42a7d, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 1
+  m_Volume: 0.4
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -4902,7 +4861,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!114 &1877296445
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4942,19 +4901,19 @@ MonoBehaviour:
     time: 10
     position: {x: -3, y: -15}
   - obj: {fileID: 143230, guid: a08d91f1e6be17341bb536b43ccea761, type: 2}
-    time: 15
+    time: 13
     position: {x: 0, y: -15}
   - obj: {fileID: 143230, guid: aad3264cdf700cd47a79e1bddf01e3cd, type: 2}
     time: 16
     position: {x: 2, y: -15}
   - obj: {fileID: 199214, guid: 4fb1eddb10e081043ace1d6ac6badd67, type: 2}
-    time: 19
+    time: 18
     position: {x: 5, y: -15}
   - obj: {fileID: 103044, guid: 78e77584a45c7df43960fc590c1a4e14, type: 2}
-    time: 21
+    time: 20
     position: {x: -5, y: -15}
   - obj: {fileID: 143230, guid: a08d91f1e6be17341bb536b43ccea761, type: 2}
-    time: 25
+    time: 24
     position: {x: -5, y: -15}
   - obj: {fileID: 143230, guid: a08d91f1e6be17341bb536b43ccea761, type: 2}
     time: 26
@@ -4978,19 +4937,124 @@ MonoBehaviour:
     time: 35
     position: {x: -5, y: -15}
   - obj: {fileID: 103044, guid: 686a6a7ade2ea3c4b8b4ca8c17cdbec6, type: 2}
-    time: 35
+    time: 38
     position: {x: 5, y: -15}
   - obj: {fileID: 140662, guid: 577359ae9e43d324d9c3fc074a1e31da, type: 2}
-    time: 45
+    time: 43
     position: {x: 0, y: -5}
   - obj: {fileID: 156646, guid: 25d553d25490f4645a849d4982e7228d, type: 2}
-    time: 45
+    time: 43
     position: {x: 5, y: -15}
   wave2:
-  - obj: {fileID: 156442, guid: a298c2ca15327ad4a8ff36826d8c9075, type: 2}
+  - obj: {fileID: 143230, guid: a08d91f1e6be17341bb536b43ccea761, type: 2}
     time: 2
+    position: {x: -2, y: -15}
+  - obj: {fileID: 143230, guid: a08d91f1e6be17341bb536b43ccea761, type: 2}
+    time: 2
+    position: {x: 2, y: -15}
+  - obj: {fileID: 103044, guid: 78e77584a45c7df43960fc590c1a4e14, type: 2}
+    time: 1
+    position: {x: 0, y: -15}
+  - obj: {fileID: 143230, guid: a08d91f1e6be17341bb536b43ccea761, type: 2}
+    time: 8
+    position: {x: -2, y: -15}
+  - obj: {fileID: 143230, guid: a08d91f1e6be17341bb536b43ccea761, type: 2}
+    time: 8
+    position: {x: 2, y: -15}
+  - obj: {fileID: 103044, guid: 686a6a7ade2ea3c4b8b4ca8c17cdbec6, type: 2}
+    time: 8
+    position: {x: 0, y: -15}
+  - obj: {fileID: 143230, guid: a08d91f1e6be17341bb536b43ccea761, type: 2}
+    time: 12
+    position: {x: -5, y: -15}
+  - obj: {fileID: 143230, guid: a08d91f1e6be17341bb536b43ccea761, type: 2}
+    time: 13
+    position: {x: -2.5, y: -15}
+  - obj: {fileID: 143230, guid: a08d91f1e6be17341bb536b43ccea761, type: 2}
+    time: 14
+    position: {x: 0, y: -15}
+  - obj: {fileID: 143230, guid: aad3264cdf700cd47a79e1bddf01e3cd, type: 2}
+    time: 15
+    position: {x: 2.5, y: -15}
+  - obj: {fileID: 140662, guid: 8f4c74145b3254c41908cfec292b9366, type: 2}
+    time: 18
+    position: {x: 5, y: 5}
+  - obj: {fileID: 140662, guid: 577359ae9e43d324d9c3fc074a1e31da, type: 2}
+    time: 19
+    position: {x: -5, y: -5}
+  - obj: {fileID: 156646, guid: ede9ea95028463741b7271f50a457575, type: 2}
+    time: 18
+    position: {x: 0, y: 0}
+  wave3:
+  - obj: {fileID: 143230, guid: a08d91f1e6be17341bb536b43ccea761, type: 2}
+    time: 3
+    position: {x: 0, y: -15}
+  - obj: {fileID: 143230, guid: a08d91f1e6be17341bb536b43ccea761, type: 2}
+    time: 3
+    position: {x: -2, y: -15}
+  - obj: {fileID: 143230, guid: a08d91f1e6be17341bb536b43ccea761, type: 2}
+    time: 3
+    position: {x: 2, y: -15}
+  - obj: {fileID: 143230, guid: a08d91f1e6be17341bb536b43ccea761, type: 2}
+    time: 4.5
+    position: {x: 7, y: -15}
+  - obj: {fileID: 143230, guid: a08d91f1e6be17341bb536b43ccea761, type: 2}
+    time: 4.5
+    position: {x: 5, y: -15}
+  - obj: {fileID: 143230, guid: a08d91f1e6be17341bb536b43ccea761, type: 2}
+    time: 4.5
+    position: {x: 3, y: -15}
+  - obj: {fileID: 143230, guid: a08d91f1e6be17341bb536b43ccea761, type: 2}
+    time: 6
+    position: {x: -7, y: -15}
+  - obj: {fileID: 143230, guid: a08d91f1e6be17341bb536b43ccea761, type: 2}
+    time: 6
+    position: {x: -5, y: -15}
+  - obj: {fileID: 143230, guid: a08d91f1e6be17341bb536b43ccea761, type: 2}
+    time: 6
+    position: {x: -3, y: -15}
+  - obj: {fileID: 103044, guid: 686a6a7ade2ea3c4b8b4ca8c17cdbec6, type: 2}
+    time: 8
+    position: {x: -5, y: -15}
+  - obj: {fileID: 103044, guid: 78e77584a45c7df43960fc590c1a4e14, type: 2}
+    time: 10
+    position: {x: 5, y: -15}
+  - obj: {fileID: 103044, guid: 686a6a7ade2ea3c4b8b4ca8c17cdbec6, type: 2}
+    time: 12
+    position: {x: 0, y: -15}
+  - obj: {fileID: 140662, guid: 8f4c74145b3254c41908cfec292b9366, type: 2}
+    time: 15
     position: {x: 0, y: -5}
-  BossWave: []
+  - obj: {fileID: 156646, guid: df9e5e9618a1e1845bfc9a5d07355d28, type: 2}
+    time: 15
+    position: {x: 0, y: -5}
+  wave4:
+  - obj: {fileID: 140662, guid: 8f4c74145b3254c41908cfec292b9366, type: 2}
+    time: 2
+    position: {x: 5, y: 5}
+  - obj: {fileID: 140662, guid: 577359ae9e43d324d9c3fc074a1e31da, type: 2}
+    time: 2
+    position: {x: -5, y: -5}
+  - obj: {fileID: 156646, guid: f2bbc7cabe9eb0e49b78c17e7d610d97, type: 2}
+    time: 1
+    position: {x: 0, y: 0}
+  wave5:
+  - obj: {fileID: 140662, guid: 8f4c74145b3254c41908cfec292b9366, type: 2}
+    time: 2
+    position: {x: 5, y: -5}
+  - obj: {fileID: 140662, guid: 577359ae9e43d324d9c3fc074a1e31da, type: 2}
+    time: 2
+    position: {x: -5, y: 5}
+  - obj: {fileID: 156646, guid: f2bbc7cabe9eb0e49b78c17e7d610d97, type: 2}
+    time: 1
+    position: {x: 0, y: 0}
+  boss:
+  - obj: {fileID: 121126, guid: c1017dc3e7e19114b929d352fad6a536, type: 2}
+    time: 0
+    position: {x: 0, y: 0}
+  - obj: {fileID: 156442, guid: a298c2ca15327ad4a8ff36826d8c9075, type: 2}
+    time: 3
+    position: {x: 0, y: -5}
 --- !u!4 &1877296446
 Transform:
   m_ObjectHideFlags: 0
@@ -5053,6 +5117,7 @@ MonoBehaviour:
   poof: {fileID: 8300000, guid: f77dc6f84cb2c1c459656f60264d67a5, type: 3}
   laugh: {fileID: 8300000, guid: 2a0d43e22a34abe4a9cbf0c572d118f0, type: 3}
   damage: {fileID: 8300000, guid: a4036bcb999c296489b6f02115386bf4, type: 3}
+  chrunch: {fileID: 8300000, guid: c233a5f223bbb644bb88f7c7beb2c27c, type: 3}
   music: {fileID: 8300000, guid: a62d268dac870e44ca8324b4c47ac191, type: 3}
 --- !u!4 &1879016006
 Transform:
@@ -5086,6 +5151,7 @@ MonoBehaviour:
   playPoof: 0
   playLaugh: 0
   playDamage: 0
+  playChrunch: 0
   playMusic: 0
 --- !u!1 &1895414127
 GameObject:
@@ -5646,6 +5712,7 @@ MonoBehaviour:
   playPoof: 0
   playLaugh: 0
   playDamage: 0
+  playChrunch: 0
   playMusic: 0
 --- !u!1001 &2023288102
 Prefab:
@@ -5756,6 +5823,10 @@ Prefab:
       propertyPath: m_RootOrder
       value: 8
       objectReference: {fileID: 0}
+    - target: {fileID: 11499662, guid: 9b04855d70f47654cb6699ec51128735, type: 2}
+      propertyPath: activate.Array.data[0]
+      value: 
+      objectReference: {fileID: 438526185}
     - target: {fileID: 11465686, guid: 9b04855d70f47654cb6699ec51128735, type: 2}
       propertyPath: joke
       value: 
@@ -5764,30 +5835,6 @@ Prefab:
       propertyPath: staminaSlider
       value: 
       objectReference: {fileID: 412526992}
-    - target: {fileID: 11499662, guid: 9b04855d70f47654cb6699ec51128735, type: 2}
-      propertyPath: activate.Array.data[0]
-      value: 
-      objectReference: {fileID: 438526185}
-    - target: {fileID: 11417104, guid: 9b04855d70f47654cb6699ec51128735, type: 2}
-      propertyPath: playWingFlap
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 11417104, guid: 9b04855d70f47654cb6699ec51128735, type: 2}
-      propertyPath: playFireBurst
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 147306, guid: 9b04855d70f47654cb6699ec51128735, type: 2}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 11407208, guid: 9b04855d70f47654cb6699ec51128735, type: 2}
-      propertyPath: maxHealth
-      value: 100
-      objectReference: {fileID: 0}
-    - target: {fileID: 11407208, guid: 9b04855d70f47654cb6699ec51128735, type: 2}
-      propertyPath: health
-      value: 100
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 9b04855d70f47654cb6699ec51128735, type: 2}
   m_IsPrefabParent: 0

@@ -293,6 +293,7 @@ MonoBehaviour:
   playPoof: 0
   playLaugh: 0
   playDamage: 0
+  playChrunch: 0
   playMusic: 0
 --- !u!212 &21212914
 SpriteRenderer:
@@ -528,6 +529,11 @@ Prefab:
       propertyPath: extraLife
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 0}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 11407208, guid: 9b04855d70f47654cb6699ec51128735,
+        type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 143230}
