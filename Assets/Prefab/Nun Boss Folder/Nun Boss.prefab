@@ -26,6 +26,7 @@ GameObject:
   m_Component:
   - 4: {fileID: 445132}
   - 212: {fileID: 21264850}
+  - 95: {fileID: 9543798}
   - 50: {fileID: 5071964}
   - 61: {fileID: 6176700}
   - 114: {fileID: 11405226}
@@ -263,6 +264,22 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!1 &185372
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 4
+  m_Component:
+  - 4: {fileID: 400688}
+  - 212: {fileID: 21298930}
+  m_Layer: 0
+  m_Name: Gold
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
 --- !u!1 &191310
 GameObject:
   m_ObjectHideFlags: 1
@@ -300,6 +317,18 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!4 &400688
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 185372}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.2, y: -3.224743, z: 0}
+  m_LocalScale: {x: 394.25955, y: 394.2599, z: 197.12994}
+  m_Children: []
+  m_Father: {fileID: 445132}
+  m_RootOrder: 6
 --- !u!4 &402658
 Transform:
   m_ObjectHideFlags: 1
@@ -388,6 +417,7 @@ Transform:
   - {fileID: 471312}
   - {fileID: 438220}
   - {fileID: 434178}
+  - {fileID: 400688}
   m_Father: {fileID: 0}
   m_RootOrder: 0
 --- !u!4 &447732
@@ -854,6 +884,23 @@ Animator:
   m_WarningMessage: 
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
+--- !u!95 &9543798
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 110572}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: a43f9a3450999034cbbf17759e219dde, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
 --- !u!95 &9544720
 Animator:
   serializedVersion: 3
@@ -970,6 +1017,8 @@ MonoBehaviour:
   NunBoss: 1
   deathParticle: {fileID: 133166, guid: 4994bad1d78157c469832e9cddb69795, type: 2}
   wave: 0
+  extraLife: 0
+  apple: {fileID: 0}
 --- !u!114 &11411368
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1033,6 +1082,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a17006a4e2ae8024c8a4d377dc5ed2fd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  bell: {fileID: 21298930}
+  anim: {fileID: 9543798}
 --- !u!114 &11446692
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -4500,7 +4551,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: a48e0ef1618237447aed711c59c5fe08, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 7a91435fd98e5744aa1d7791f80f0571, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -4592,6 +4643,36 @@ SpriteRenderer:
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: f7c1cdb85b66e1d439020d4031dd4e59, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+--- !u!212 &21298930
+SpriteRenderer:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 185372}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000e000000000000000, type: 0}
+  m_SubsetIndices: 
+  m_StaticBatchRoot: {fileID: 0}
+  m_UseLightProbes: 0
+  m_ReflectionProbeUsage: 0
+  m_ProbeAnchor: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 21300000, guid: e1ba5151c551eed4fa2c1f241d9226ef, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 0}
   m_FlipX: 0
   m_FlipY: 0
 --- !u!1001 &100100000

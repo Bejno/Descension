@@ -57,8 +57,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d7559962a041fa447999ea27bd983f68, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  deathTime: 2
-  randomTime: 1
+  deathTime: 0
+  randomTime: 0
   spawnPartical: 1
   startAtSpawn: 0
   partical: {fileID: 178514, guid: 025e19f961a364443a6cee96c10b6e67, type: 2}
@@ -118,7 +118,7 @@ Prefab:
       objectReference: {fileID: 178514, guid: 025e19f961a364443a6cee96c10b6e67, type: 2}
     - target: {fileID: 0}
       propertyPath: randomTime
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: spawnPartical
@@ -126,7 +126,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: deathTime
-      value: 2
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 0}
       propertyPath: startAtSpawn

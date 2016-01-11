@@ -73,6 +73,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   deathTime: 3.1
+  randomTime: 0
+  spawnPartical: 0
+  startAtSpawn: 1
+  partical: {fileID: 0}
 --- !u!114 &11438248
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1995,7 +1999,7 @@ ParticleSystem:
     serializedVersion: 2
     enabled: 1
     type: 1
-    radius: 5.08
+    radius: 6
     angle: 25
     length: 5
     boxX: 1
@@ -2016,7 +2020,7 @@ ParticleSystem:
     serializedVersion: 2
     m_Type: 0
     rate:
-      scalar: 50
+      scalar: 80
       maxCurve:
         serializedVersion: 2
         m_Curve:
